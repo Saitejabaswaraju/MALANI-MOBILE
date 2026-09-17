@@ -1197,6 +1197,12 @@
         center/cover;
       display: grid;
       place-items: center;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .map-placeholder:hover {
+      opacity: 0.96;
     }
 
     .map-placeholder-inner {
@@ -3327,8 +3333,10 @@
     const STORE = {
       phone: "9950677383",
       whatsapp: "919950677383",
-      mapsUrl: "",
-      googleBusinessUrl: "",
+      // Opens Google Maps with route from user's current location → shop
+      mapsUrl: "https://www.google.com/maps/dir/?api=1&destination=Jambheshwar+Market,+Main+Chauraha,+Dhorimanna,+Rajasthan+344704",
+      // Google search / place link (used for reviews button when no dedicated Business Profile URL)
+      googleBusinessUrl: "https://www.google.com/maps/search/?api=1&query=Malani+Mobile+%26+Electronic+Showroom+Jambheshwar+Market+Dhorimanna+Rajasthan+344704",
       instagram: "https://www.instagram.com/malani_mobile_dhorimanna/",
       email: "ramsinghkhilery1@gmail.com"
     };
@@ -3337,7 +3345,7 @@
     /* =====================================================
        PRODUCT DATA
 
-       These are SHOWCASE examples only.
+       These are SHOWCASE s only.
        They do NOT contain prices or stock claims.
        Replace/add products as needed.
        ===================================================== */
@@ -3346,11 +3354,11 @@
 
       {
         id: 1,
-        name: "iPhone — Example Model",
+        name: "iPhone —  Model",
         brand: "Apple",
         category: "mobile",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDKYu1-hy6RYmiq2A2VGwJK021dYNAbYIC3uFjKJbCfw&s=10",
-        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specification: " showcase product • कीमत और उपलब्धता पूछें",
         specs: [
           "Apple smartphone",
           "Model details configurable",
@@ -3360,11 +3368,11 @@
 
       {
         id: 2,
-        name: "Galaxy — Example Model",
+        name: "Galaxy —  Model",
         brand: "Samsung",
         category: "mobile",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8B1TcHuGgrDXF8o__I_LqtKyJXIHAANU9gK3x9qtHyg&s=10",
-        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specification: " showcase product • कीमत और उपलब्धता पूछें",
         specs: [
           "Samsung smartphone",
           "Model details configurable",
@@ -3374,11 +3382,11 @@
 
       {
         id: 3,
-        name: "OnePlus — Example Model",
+        name: "OnePlus —  Model",
         brand: "OnePlus",
         category: "mobile",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSltvhejGB1UXsrF5EfiPfXo-PT42RBTvAcQjZfl-CYKg&s=10",
-        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specification: " showcase product • कीमत और उपलब्धता पूछें",
         specs: [
           "OnePlus smartphone",
           "Model details configurable",
@@ -3388,11 +3396,11 @@
 
       {
         id: 4,
-        name: "vivo — Example Model",
+        name: "vivo —  Model",
         brand: "vivo",
         category: "mobile",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVCiZgdJEzIEmAozMOwqv16VWCW8znGj5Zv5aCXjdSvg&s=10",
-        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specification: " showcase product • कीमत और उपलब्धता पूछें",
         specs: [
           "vivo smartphone",
           "Model details configurable",
@@ -3402,11 +3410,11 @@
 
       {
         id: 5,
-        name: "OPPO — Example Model",
+        name: "OPPO —  Model",
         brand: "OPPO",
         category: "mobile",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD8nlqhYa8EKxeGAfe4NkX-NAOX-5WIhfARGJ7AOsphQ&s=10",
-        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specification: " showcase product • कीमत और उपलब्धता पूछें",
         specs: [
           "OPPO smartphone",
           "Model details configurable",
@@ -3416,11 +3424,11 @@
 
       {
         id: 6,
-        name: "realme — Example Model",
+        name: "realme —  Model",
         brand: "realme",
         category: "mobile",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZFqvzlgEZbkd1-BTovazuMcoZNCV2L3Jfy64WsdCOvw&s=10",
-        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specification: " showcase product • कीमत और उपलब्धता पूछें",
         specs: [
           "realme smartphone",
           "Model details configurable",
@@ -3430,11 +3438,11 @@
 
       {
         id: 7,
-        name: "iQOO — Example Model",
+        name: "iQOO —  Model",
         brand: "iQOO",
         category: "mobile",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGObYL545M-ASug3ud7LXYdlSHs7nwxfEWQooE-f0rCA&s=10",
-        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specification: " showcase product • कीमत और उपलब्धता पूछें",
         specs: [
           "iQOO smartphone",
           "Model details configurable",
@@ -3444,11 +3452,11 @@
 
       {
         id: 8,
-        name: "Redmi — Example Model",
+        name: "Redmi —  Model",
         brand: "Redmi",
         category: "mobile",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuXobNuEsi8DC2D5Ex3N2Jf0DejCXvDcuDN4yIho5Y1w&s=10",
-        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specification: " showcase product • कीमत और उपलब्धता पूछें",
         specs: [
           "Redmi smartphone",
           "Model details configurable",
@@ -3458,11 +3466,11 @@
 
       {
         id: 9,
-        name: "Motorola — Example Model",
+        name: "Motorola —  Model",
         brand: "Motorola",
         category: "mobile",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFM-B3g_XwsJbXR9qitO6fqSqGr728NP9rna-sVqvpmQ&s=10",
-        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specification: " showcase product • कीमत और उपलब्धता पूछें",
         specs: [
           "Motorola smartphone",
           "Model details configurable",
@@ -3472,11 +3480,11 @@
 
       {
         id: 10,
-        name: "POCO — Example Model",
+        name: "POCO —  Model",
         brand: "POCO",
         category: "mobile",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNcLbud32WAHY3ty2UWiG8mtpsrf4Bqi7J3y0iK-c6-Q&s",
-        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specification: " showcase product • कीमत और उपलब्धता पूछें",
         specs: [
           "POCO smartphone",
           "Model details configurable",
@@ -3490,7 +3498,7 @@
         brand: "Audio",
         category: "accessory",
         image: "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=700&q=80",
-        specification: "Example accessory • उपलब्धता पूछें",
+        specification: " accessory • उपलब्धता पूछें",
         specs: [
           "Wireless earbuds",
           "Brand/model configurable",
@@ -3504,7 +3512,7 @@
         brand: "Wearables",
         category: "accessory",
         image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80",
-        specification: "Example accessory • उपलब्धता पूछें",
+        specification: " accessory • उपलब्धता पूछें",
         specs: [
           "Smart watch",
           "Brand/model configurable",
@@ -3518,7 +3526,7 @@
         brand: "Accessories",
         category: "accessory",
         image: "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=700&q=80",
-        specification: "Example accessory • उपलब्धता पूछें",
+        specification: " accessory • उपलब्धता पूछें",
         specs: [
           "Mobile charger",
           "Brand/model configurable",
@@ -3532,7 +3540,7 @@
         brand: "Accessories",
         category: "accessory",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKGIz6KRlz9xwZbSu2N__MNRIe6nT1t1Q8vWgI2ImKng&s=10",
-        specification: "Example accessory • उपलब्धता पूछें",
+        specification: " accessory • उपलब्धता पूछें",
         specs: [
           "Power bank",
           "Capacity/model configurable",
@@ -4509,6 +4517,16 @@
         }
 
       });
+
+      // Make the whole map area open directions (same as maps buttons)
+      const mapPlaceholder = document.querySelector(".map-placeholder");
+      if (mapPlaceholder && STORE.mapsUrl) {
+        mapPlaceholder.addEventListener("click", (e) => {
+          // Don't double-trigger if the inner button was clicked
+          if (e.target.closest("a")) return;
+          window.open(STORE.mapsUrl, "_blank", "noopener");
+        });
+      }
 
 
       document.querySelectorAll(".maps-review-link").forEach(link => {
