@@ -2226,8 +2226,7 @@
             </div>
 
             <h1 data-i18n="heroTitle">
-              धोरीमन्ना का भरोसेमंद
-              <span class="highlight">मोबाइल और इलेक्ट्रॉनिक्स शोरूम</span>
+              <span class="highlight">धोरीमन्ना</span> का भरोसेमंद मोबाइल और इलेक्ट्रॉनिक्स शोरूम
             </h1>
 
             <p class="hero-text" data-i18n="heroText">
@@ -3576,7 +3575,7 @@
 
         heroBadge: "धोरीमन्ना का स्थानीय शोरूम",
 
-        heroTitle: "धोरीमन्ना का भरोसेमंद मोबाइल और इलेक्ट्रॉनिक्स शोरूम",
+        heroTitle: "<span class=\"highlight\">धोरीमन्ना</span> का भरोसेमंद मोबाइल और इलेक्ट्रॉनिक्स शोरूम",
 
         heroText:
           "लेटेस्ट मोबाइल, इलेक्ट्रॉनिक्स, गैजेट्स और एक्सेसरीज़ की जानकारी देखें और कीमत व उपलब्धता के लिए हमसे संपर्क करें।",
@@ -3792,7 +3791,7 @@
         heroBadge: "Local showroom in Dhorimanna",
 
         heroTitle:
-          "Your Mobile & Electronics Showroom in Dhorimanna",
+          "Your Mobile & Electronics Showroom in <span class=\"highlight\">Dhorimanna</span>",
 
         heroText:
           "Explore mobiles, electronics, gadgets and accessories, then contact us for current price and availability.",
@@ -4026,7 +4025,8 @@
         const key = element.getAttribute("data-i18n");
 
         if (translations[language][key]) {
-          element.textContent = translations[language][key];
+          // Use innerHTML so highlight spans (e.g. Dhorimanna) render correctly
+          element.innerHTML = translations[language][key];
         }
       });
 
