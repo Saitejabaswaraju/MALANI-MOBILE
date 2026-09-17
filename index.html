@@ -1,0 +1,4789 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>मालाणी मोबाइल इलेक्ट्रॉनिक्स शोरूम धोरीमन्ना | Malani Mobile</title>
+
+  <meta
+    name="description"
+    content="धोरीमन्ना में मालाणी मोबाइल इलेक्ट्रॉनिक्स शोरूम। मोबाइल, इलेक्ट्रॉनिक्स, गैजेट्स और एक्सेसरीज़ की जानकारी देखें और कीमत व उपलब्धता के लिए संपर्क करें।"
+  />
+
+  <meta name="theme-color" content="#FF4B2B" />
+
+  <meta property="og:title" content="मालाणी मोबाइल इलेक्ट्रॉनिक्स शोरूम धोरीमन्ना" />
+  <meta property="og:description" content="मोबाइल, इलेक्ट्रॉनिक्स, गैजेट्स और एक्सेसरीज़ के लिए मालाणी मोबाइल, धोरीमन्ना।" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://malanimobileofficel.in/" />
+
+  <link rel="canonical" href="https://malanimobileofficel.in/" />
+
+  <!-- Hindi-friendly font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --primary: #ff4b2b;
+      --secondary: #ff8a00;
+      --accent: #5b2eff;
+      --dark: #111827;
+      --dark-2: #1f2937;
+      --muted: #64748b;
+      --light: #f8fafc;
+      --border: #e5e7eb;
+      --white: #ffffff;
+      --whatsapp: #25d366;
+      --shadow-sm: 0 5px 20px rgba(15, 23, 42, 0.06);
+      --shadow: 0 15px 45px rgba(15, 23, 42, 0.09);
+      --radius: 18px;
+      --radius-lg: 28px;
+      --container: 1240px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Noto Sans Devanagari", system-ui, sans-serif;
+      background: var(--white);
+      color: var(--dark);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      border: 0;
+      cursor: pointer;
+    }
+
+    .container {
+      width: min(calc(100% - 32px), var(--container));
+      margin-inline: auto;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 30px;
+      margin-bottom: 42px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--primary);
+      font-size: 0.86rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 3px;
+      border-radius: 20px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      font-weight: 900;
+    }
+
+    .section-description {
+      color: var(--muted);
+      max-width: 620px;
+      margin-top: 12px;
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid transparent;
+      transition: 0.25s ease;
+    }
+
+    .header.scrolled {
+      box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+      border-color: var(--border);
+    }
+
+    .nav {
+      height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.05;
+      flex-shrink: 0;
+    }
+
+    .logo-main {
+      font-size: 1.22rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+
+    .logo-main span {
+      color: var(--primary);
+    }
+
+    .logo-sub {
+      color: var(--muted);
+      font-size: 0.58rem;
+      letter-spacing: 0.14em;
+      margin-top: 4px;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .nav-link {
+      padding: 9px 10px;
+      border-radius: 10px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #475569;
+      transition: 0.2s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--primary);
+      background: #fff5f2;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .lang-switch {
+      display: flex;
+      align-items: center;
+      padding: 3px;
+      border: 1px solid var(--border);
+      background: var(--white);
+      border-radius: 10px;
+      gap: 2px;
+    }
+
+    .lang-btn {
+      background: transparent;
+      padding: 6px 8px;
+      border-radius: 7px;
+      font-size: 0.73rem;
+      font-weight: 800;
+      color: var(--muted);
+    }
+
+    .lang-btn.active {
+      color: var(--white);
+      background: var(--dark);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 12px;
+      font-weight: 800;
+      font-size: 0.84rem;
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      color: var(--white);
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      box-shadow: 0 10px 25px rgba(255, 75, 43, 0.22);
+    }
+
+    .btn-primary:hover {
+      box-shadow: 0 14px 32px rgba(255, 75, 43, 0.28);
+    }
+
+    .btn-outline {
+      background: var(--white);
+      border: 1px solid var(--border);
+      color: var(--dark);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .btn-whatsapp {
+      color: var(--white);
+      background: var(--whatsapp);
+    }
+
+    .btn-dark {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .btn-disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    .hamburger {
+      display: none;
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      background: var(--white);
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .hamburger span {
+      width: 20px;
+      height: 2px;
+      border-radius: 4px;
+      background: var(--dark);
+      transition: 0.25s ease;
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      position: relative;
+      padding: 150px 0 70px;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(255, 138, 0, 0.13), transparent 28%),
+        radial-gradient(circle at 10% 85%, rgba(91, 46, 255, 0.08), transparent 30%),
+        #fff;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      right: -250px;
+      top: 50px;
+      border: 1px solid rgba(255, 75, 43, 0.1);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 13px;
+      border: 1px solid #ffe0d9;
+      border-radius: 999px;
+      background: #fff8f6;
+      color: #d93e21;
+      font-size: 0.76rem;
+      font-weight: 800;
+      margin-bottom: 22px;
+    }
+
+    .hero-badge .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--primary);
+      box-shadow: 0 0 0 5px rgba(255, 75, 43, 0.1);
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      font-size: clamp(2.6rem, 5.4vw, 5.2rem);
+      line-height: 1.08;
+      letter-spacing: -0.055em;
+      font-weight: 900;
+    }
+
+    .hero h1 .highlight {
+      color: var(--primary);
+    }
+
+    .hero-text {
+      max-width: 650px;
+      color: var(--muted);
+      font-size: 1rem;
+      margin-top: 20px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .hero-rating {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .rating-stars {
+      color: #f59e0b;
+      font-size: 1rem;
+      letter-spacing: 1px;
+    }
+
+    .rating-copy strong {
+      display: block;
+      font-size: 0.94rem;
+    }
+
+    .rating-copy span {
+      color: var(--muted);
+      font-size: 0.76rem;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 540px;
+    }
+
+    .showroom-image {
+      position: absolute;
+      inset: 15px 0 15px 20px;
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: #e5e7eb;
+    }
+
+    .showroom-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .showroom-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(17, 24, 39, 0.02) 35%,
+        rgba(17, 24, 39, 0.58)
+      );
+    }
+
+    .hero-product {
+      position: absolute;
+      width: 175px;
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      padding: 12px;
+      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.16);
+      animation: gentleFloat 5s ease-in-out infinite;
+    }
+
+    .hero-product img {
+      width: 100%;
+      height: 130px;
+      object-fit: contain;
+      border-radius: 13px;
+      background: #f8fafc;
+    }
+
+    .hero-product strong {
+      display: block;
+      margin-top: 9px;
+      font-size: 0.82rem;
+    }
+
+    .hero-product span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.68rem;
+      margin-top: 2px;
+    }
+
+    .hero-product.one {
+      top: 0;
+      left: -20px;
+    }
+
+    .hero-product.two {
+      right: -20px;
+      bottom: 0;
+      animation-delay: 1.4s;
+    }
+
+    @keyframes gentleFloat {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+
+    /* =========================
+       TRUST BAR
+    ========================== */
+
+    .trust-section {
+      padding: 20px 0 0;
+      position: relative;
+      z-index: 3;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      padding: 22px 18px;
+      border-right: 1px solid var(--border);
+    }
+
+    .trust-item:last-child {
+      border-right: 0;
+    }
+
+    .trust-icon {
+      width: 40px;
+      height: 40px;
+      flex: 0 0 40px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: #fff5f2;
+      color: var(--primary);
+      font-size: 1.15rem;
+    }
+
+    .trust-item strong {
+      display: block;
+      font-size: 0.84rem;
+    }
+
+    .trust-item span {
+      color: var(--muted);
+      font-size: 0.69rem;
+    }
+
+    /* =========================
+       CATEGORIES
+    ========================== */
+
+    .categories {
+      background: var(--light);
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .category-card {
+      position: relative;
+      min-height: 245px;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: var(--white);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: 0.3s ease;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+
+    .category-image {
+      height: 150px;
+      overflow: hidden;
+      background: #f1f5f9;
+    }
+
+    .category-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .category-card:hover .category-image img {
+      transform: scale(1.05);
+    }
+
+    .category-content {
+      padding: 17px;
+    }
+
+    .category-content h3 {
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+
+    .category-content p {
+      color: var(--muted);
+      font-size: 0.72rem;
+    }
+
+    .category-arrow {
+      position: absolute;
+      right: 15px;
+      bottom: 16px;
+      color: var(--primary);
+      font-weight: 900;
+      font-size: 0.85rem;
+    }
+
+    /* =========================
+       BRANDS
+    ========================== */
+
+    .brands-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 38px;
+    }
+
+    .brand-btn {
+      padding: 9px 16px;
+      border-radius: 999px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      color: #475569;
+      font-size: 0.78rem;
+      font-weight: 800;
+      transition: 0.2s ease;
+    }
+
+    .brand-btn:hover,
+    .brand-btn.active {
+      color: var(--white);
+      border-color: var(--dark);
+      background: var(--dark);
+    }
+
+    /* =========================
+       SEARCH
+    ========================== */
+
+    .catalog-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      margin-bottom: 28px;
+    }
+
+    .search-box {
+      position: relative;
+      flex: 1;
+      max-width: 500px;
+    }
+
+    .search-box input {
+      width: 100%;
+      height: 52px;
+      padding: 0 48px 0 18px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      outline: none;
+      background: var(--white);
+      color: var(--dark);
+      transition: 0.2s ease;
+    }
+
+    .search-box input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px rgba(255, 75, 43, 0.08);
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 17px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .catalog-count {
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    /* =========================
+       PRODUCTS
+    ========================== */
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .product-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      transition: 0.3s ease;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+
+    .product-image {
+      position: relative;
+      height: 245px;
+      padding: 20px;
+      background: #f8fafc;
+      overflow: hidden;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transition: transform 0.35s ease;
+    }
+
+    .product-card:hover .product-image img {
+      transform: scale(1.05);
+    }
+
+    .product-label {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      padding: 5px 9px;
+      border-radius: 7px;
+      background: var(--dark);
+      color: var(--white);
+      font-size: 0.62rem;
+      font-weight: 800;
+    }
+
+    .product-body {
+      padding: 17px;
+    }
+
+    .product-brand {
+      color: var(--primary);
+      font-size: 0.68rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .product-name {
+      margin-top: 4px;
+      font-size: 0.96rem;
+      font-weight: 900;
+      line-height: 1.35;
+    }
+
+    .product-spec {
+      color: var(--muted);
+      font-size: 0.7rem;
+      margin-top: 6px;
+      min-height: 34px;
+    }
+
+    .availability {
+      display: inline-flex;
+      margin-top: 12px;
+      padding: 6px 9px;
+      background: #fff7ed;
+      color: #c2410c;
+      border-radius: 7px;
+      font-size: 0.66rem;
+      font-weight: 800;
+    }
+
+    .product-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 15px;
+    }
+
+    .product-actions .btn {
+      min-height: 40px;
+      padding: 0 9px;
+      font-size: 0.7rem;
+    }
+
+    /* =========================
+       ELECTRONICS
+    ========================== */
+
+    .electronics {
+      background: var(--light);
+    }
+
+    .electronics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .electronics-card {
+      position: relative;
+      min-height: 180px;
+      border-radius: 17px;
+      overflow: hidden;
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .electronics-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.7;
+      transition: transform 0.4s ease;
+    }
+
+    .electronics-card:hover img {
+      transform: scale(1.06);
+    }
+
+    .electronics-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 20%, rgba(17, 24, 39, 0.9));
+    }
+
+    .electronics-info {
+      position: absolute;
+      z-index: 2;
+      left: 18px;
+      right: 18px;
+      bottom: 16px;
+    }
+
+    .electronics-info h3 {
+      font-size: 1rem;
+    }
+
+    .electronics-info p {
+      font-size: 0.68rem;
+      color: #dbeafe;
+      margin-top: 3px;
+    }
+
+    /* =========================
+       OFFERS
+    ========================== */
+
+    .offers-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .offer-card {
+      position: relative;
+      min-height: 220px;
+      padding: 28px;
+      border-radius: 22px;
+      overflow: hidden;
+      color: var(--white);
+      background: var(--dark);
+    }
+
+    .offer-card:nth-child(1) {
+      background: linear-gradient(135deg, #ff4b2b, #ff8a00);
+    }
+
+    .offer-card:nth-child(2) {
+      background: linear-gradient(135deg, #5b2eff, #8b5cf6);
+    }
+
+    .offer-card:nth-child(3) {
+      background: linear-gradient(135deg, #111827, #374151);
+    }
+
+    .offer-card::after {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 50%;
+      right: -70px;
+      top: -70px;
+    }
+
+    .offer-card span {
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+      padding: 5px 9px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 7px;
+      font-size: 0.63rem;
+      font-weight: 800;
+    }
+
+    .offer-card h3 {
+      position: relative;
+      z-index: 2;
+      margin-top: 25px;
+      font-size: 1.45rem;
+    }
+
+    .offer-card p {
+      position: relative;
+      z-index: 2;
+      margin-top: 6px;
+      max-width: 320px;
+      color: rgba(255,255,255,0.82);
+      font-size: 0.76rem;
+    }
+
+    .offer-card .offer-link {
+      position: absolute;
+      z-index: 3;
+      left: 28px;
+      bottom: 22px;
+      font-size: 0.74rem;
+      font-weight: 900;
+    }
+
+    /* =========================
+       WHY US
+    ========================== */
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .why-card {
+      padding: 24px 18px;
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      background: var(--white);
+      transition: 0.25s ease;
+    }
+
+    .why-card:hover {
+      border-color: #ffd3ca;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .why-icon {
+      font-size: 1.65rem;
+      margin-bottom: 16px;
+    }
+
+    .why-card h3 {
+      font-size: 0.9rem;
+    }
+
+    .why-card p {
+      color: var(--muted);
+      font-size: 0.69rem;
+      margin-top: 5px;
+    }
+
+    /* =========================
+       REVIEWS
+    ========================== */
+
+    .reviews {
+      background: #111827;
+      color: var(--white);
+    }
+
+    .reviews .section-description {
+      color: #94a3b8;
+    }
+
+    .review-layout {
+      display: grid;
+      grid-template-columns: 0.7fr 1.3fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .rating-big {
+      font-size: clamp(3.8rem, 7vw, 6rem);
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -0.06em;
+    }
+
+    .rating-stars-big {
+      margin-top: 12px;
+      color: #fbbf24;
+      font-size: 1.35rem;
+      letter-spacing: 4px;
+    }
+
+    .rating-reviews {
+      margin-top: 8px;
+      color: #cbd5e1;
+      font-size: 0.88rem;
+    }
+
+    .review-note {
+      padding: 35px;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 22px;
+      background: rgba(255,255,255,0.045);
+    }
+
+    .review-note p {
+      color: #cbd5e1;
+      font-size: 0.92rem;
+      line-height: 1.8;
+    }
+
+    .review-note .btn {
+      margin-top: 24px;
+    }
+
+    /* =========================
+       INSTAGRAM
+    ========================== */
+
+    .instagram-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .insta-card {
+      aspect-ratio: 1 / 1;
+      border-radius: 17px;
+      overflow: hidden;
+      position: relative;
+      background: #f1f5f9;
+    }
+
+    .insta-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .insta-card:hover img {
+      transform: scale(1.06);
+    }
+
+    .insta-overlay {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      background: rgba(17,24,39,0.35);
+      color: white;
+      opacity: 0;
+      transition: 0.25s ease;
+      font-size: 1.7rem;
+    }
+
+    .insta-card:hover .insta-overlay {
+      opacity: 1;
+    }
+
+    .instagram-handle {
+      margin-top: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+    }
+
+    .instagram-handle strong {
+      font-size: 0.95rem;
+    }
+
+    .instagram-handle span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.72rem;
+      margin-top: 3px;
+    }
+
+    /* =========================
+       LOCATION
+    ========================== */
+
+    .location {
+      background: var(--light);
+    }
+
+    .location-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 430px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 25px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .location-info {
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .location-info h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      font-weight: 900;
+    }
+
+    .address {
+      display: flex;
+      gap: 13px;
+      margin-top: 25px;
+    }
+
+    .address-icon {
+      flex: 0 0 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: #fff5f2;
+      color: var(--primary);
+    }
+
+    .address p {
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    .location-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+    }
+
+    .map-placeholder {
+      min-height: 430px;
+      position: relative;
+      background:
+        linear-gradient(rgba(241,245,249,0.82), rgba(241,245,249,0.82)),
+        url("https://images.unsplash.com/photo-1524666041070-9e2a9e4a1c9b?auto=format&fit=crop&w=1200&q=80")
+        center/cover;
+      display: grid;
+      place-items: center;
+    }
+
+    .map-placeholder-inner {
+      width: min(86%, 350px);
+      padding: 28px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.8);
+      border-radius: 22px;
+      background: rgba(255,255,255,0.92);
+      box-shadow: var(--shadow);
+    }
+
+    .map-placeholder-inner .pin {
+      font-size: 2.3rem;
+    }
+
+    .map-placeholder-inner h3 {
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+
+    .map-placeholder-inner p {
+      color: var(--muted);
+      font-size: 0.7rem;
+      margin-top: 5px;
+    }
+
+    /* =========================
+       CONTACT
+    ========================== */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 30px;
+    }
+
+    .contact-info {
+      padding: 34px;
+      border-radius: 22px;
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .contact-info h2 {
+      font-size: 2rem;
+      line-height: 1.2;
+      font-weight: 900;
+    }
+
+    .contact-info > p {
+      margin-top: 10px;
+      color: #94a3b8;
+      font-size: 0.78rem;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 13px;
+      margin-top: 24px;
+    }
+
+    .contact-item-icon {
+      width: 40px;
+      height: 40px;
+      flex: 0 0 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 11px;
+      background: rgba(255,255,255,0.08);
+    }
+
+    .contact-item strong {
+      display: block;
+      font-size: 0.75rem;
+    }
+
+    .contact-item span,
+    .contact-item a {
+      display: block;
+      color: #cbd5e1;
+      font-size: 0.7rem;
+      margin-top: 3px;
+      word-break: break-word;
+    }
+
+    .contact-form {
+      padding: 34px;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: var(--white);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 0.74rem;
+      font-weight: 800;
+    }
+
+    .form-input {
+      width: 100%;
+      min-height: 48px;
+      padding: 10px 13px;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      outline: none;
+      background: #fff;
+      color: var(--dark);
+      transition: 0.2s ease;
+    }
+
+    textarea.form-input {
+      min-height: 125px;
+      resize: vertical;
+    }
+
+    .form-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px rgba(255,75,43,0.07);
+    }
+
+    .form-message {
+      display: none;
+      margin-top: 15px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+
+    .form-message.success {
+      display: block;
+      background: #ecfdf5;
+      color: #047857;
+    }
+
+    .form-message.error {
+      display: block;
+      background: #fef2f2;
+      color: #b91c1c;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      padding: 60px 0 25px;
+      background: #0b1120;
+      color: var(--white);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 45px;
+    }
+
+    .footer-brand p {
+      max-width: 340px;
+      color: #94a3b8;
+      font-size: 0.74rem;
+      margin-top: 15px;
+    }
+
+    .footer-column h3 {
+      font-size: 0.82rem;
+      margin-bottom: 15px;
+    }
+
+    .footer-column a {
+      display: block;
+      width: fit-content;
+      color: #94a3b8;
+      font-size: 0.72rem;
+      margin-bottom: 9px;
+      transition: 0.2s ease;
+    }
+
+    .footer-column a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: #64748b;
+      font-size: 0.66rem;
+    }
+
+    /* =========================
+       FLOATING ACTIONS
+    ========================== */
+
+    .floating-actions {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 900;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .float-btn {
+      width: 50px;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: white;
+      box-shadow: 0 10px 25px rgba(15,23,42,0.18);
+      font-size: 1.2rem;
+      transition: 0.2s ease;
+    }
+
+    .float-btn:hover {
+      transform: translateY(-3px) scale(1.03);
+    }
+
+    .float-whatsapp {
+      background: var(--whatsapp);
+    }
+
+    .float-call {
+      background: var(--primary);
+    }
+
+    .mobile-bottom {
+      display: none;
+    }
+
+    /* =========================
+       MODAL
+    ========================== */
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: rgba(15,23,42,0.65);
+      backdrop-filter: blur(5px);
+    }
+
+    .modal.show {
+      display: flex;
+      animation: modalFade 0.2s ease;
+    }
+
+    @keyframes modalFade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .modal-card {
+      width: min(900px, 100%);
+      max-height: 90vh;
+      overflow-y: auto;
+      border-radius: 24px;
+      background: var(--white);
+      box-shadow: 0 30px 80px rgba(0,0,0,0.25);
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      z-index: 3;
+      right: 15px;
+      top: 15px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: rgba(17,24,39,0.85);
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    .modal-content {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+    }
+
+    .modal-image {
+      min-height: 430px;
+      padding: 35px;
+      background: #f8fafc;
+      display: grid;
+      place-items: center;
+    }
+
+    .modal-image img {
+      width: 100%;
+      height: 370px;
+      object-fit: contain;
+    }
+
+    .modal-info {
+      padding: 45px 38px;
+    }
+
+    .modal-brand {
+      color: var(--primary);
+      font-size: 0.72rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .modal-info h2 {
+      margin-top: 6px;
+      font-size: 2rem;
+      line-height: 1.2;
+      font-weight: 900;
+    }
+
+    .modal-spec {
+      color: var(--muted);
+      margin-top: 10px;
+      font-size: 0.8rem;
+    }
+
+    .modal-section-title {
+      margin-top: 27px;
+      font-size: 0.82rem;
+      font-weight: 900;
+    }
+
+    .spec-list {
+      margin-top: 10px;
+      list-style: none;
+      display: grid;
+      gap: 7px;
+    }
+
+    .spec-list li {
+      padding: 8px 10px;
+      border-radius: 8px;
+      background: #f8fafc;
+      color: #475569;
+      font-size: 0.73rem;
+    }
+
+    .modal-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 25px;
+    }
+
+    /* =========================
+       EMPTY STATE
+    ========================== */
+
+    .empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 55px 20px;
+      border: 1px dashed var(--border);
+      border-radius: 18px;
+      color: var(--muted);
+    }
+
+    .empty-state strong {
+      display: block;
+      color: var(--dark);
+      margin-bottom: 5px;
+    }
+
+    /* =========================
+       REVEAL
+    ========================== */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media (max-width: 1100px) {
+      .nav-links {
+        gap: 0;
+      }
+
+      .nav-link {
+        padding-inline: 7px;
+      }
+
+      .nav-actions .btn {
+        display: none;
+      }
+
+      .hero-grid {
+        gap: 35px;
+      }
+
+      .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .why-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .trust-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .trust-item:nth-child(3) {
+        border-right: 0;
+      }
+
+      .trust-item:nth-child(-n+3) {
+        border-bottom: 1px solid var(--border);
+      }
+    }
+
+    @media (max-width: 820px) {
+      .section {
+        padding: 70px 0;
+      }
+
+      .nav-links,
+      .nav-actions > .btn {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .nav.mobile-open .nav-links {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+        top: 78px;
+        left: 16px;
+        right: 16px;
+        padding: 15px;
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        background: white;
+        box-shadow: var(--shadow);
+      }
+
+      .nav.mobile-open .nav-link {
+        padding: 13px;
+      }
+
+      .hero {
+        padding-top: 125px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        min-height: 470px;
+      }
+
+      .hero-product.one {
+        left: 0;
+      }
+
+      .hero-product.two {
+        right: 0;
+      }
+
+      .trust-grid {
+        display: flex;
+        overflow-x: auto;
+        scrollbar-width: none;
+      }
+
+      .trust-grid::-webkit-scrollbar {
+        display: none;
+      }
+
+      .trust-item {
+        min-width: 220px;
+        border-right: 1px solid var(--border);
+        border-bottom: 0 !important;
+      }
+
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .electronics-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .offers-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .review-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .instagram-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .location-card {
+        grid-template-columns: 1fr;
+      }
+
+      .map-placeholder {
+        min-height: 300px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .floating-actions {
+        display: none;
+      }
+
+      .mobile-bottom {
+        position: fixed;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        padding: 7px;
+        background: rgba(255,255,255,0.97);
+        backdrop-filter: blur(14px);
+        border-top: 1px solid var(--border);
+      }
+
+      .mobile-bottom a {
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2px;
+        border-radius: 10px;
+        font-size: 0.66rem;
+        font-weight: 800;
+        color: #475569;
+      }
+
+      .mobile-bottom a:nth-child(2) {
+        color: #128c46;
+      }
+
+      .mobile-bottom a:nth-child(1) {
+        color: var(--primary);
+      }
+
+      .mobile-bottom a span {
+        font-size: 1.05rem;
+      }
+
+      body {
+        padding-bottom: 64px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container {
+        width: min(calc(100% - 22px), var(--container));
+      }
+
+      .nav {
+        height: 68px;
+      }
+
+      .nav.mobile-open .nav-links {
+        top: 68px;
+      }
+
+      .logo-main {
+        font-size: 1rem;
+      }
+
+      .logo-sub {
+        font-size: 0.48rem;
+      }
+
+      .hero {
+        padding: 105px 0 45px;
+      }
+
+      .hero h1 {
+        font-size: 2.35rem;
+      }
+
+      .hero-text {
+        font-size: 0.86rem;
+      }
+
+      .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .hero-visual {
+        min-height: 370px;
+      }
+
+      .showroom-image {
+        inset: 10px 10px 10px 10px;
+      }
+
+      .hero-product {
+        width: 120px;
+        padding: 8px;
+        border-radius: 14px;
+      }
+
+      .hero-product img {
+        height: 85px;
+      }
+
+      .hero-product strong {
+        font-size: 0.68rem;
+      }
+
+      .hero-product span {
+        font-size: 0.57rem;
+      }
+
+      .hero-product.one {
+        left: -3px;
+      }
+
+      .hero-product.two {
+        right: -3px;
+      }
+
+      .section {
+        padding: 58px 0;
+      }
+
+      .section-header {
+        display: block;
+        margin-bottom: 28px;
+      }
+
+      .section-title {
+        font-size: 1.9rem;
+      }
+
+      .section-description {
+        font-size: 0.78rem;
+      }
+
+      .category-grid {
+        gap: 10px;
+      }
+
+      .category-card {
+        min-height: 215px;
+      }
+
+      .category-image {
+        height: 125px;
+      }
+
+      .category-content {
+        padding: 12px;
+      }
+
+      .category-content h3 {
+        font-size: 0.83rem;
+      }
+
+      .category-content p {
+        font-size: 0.62rem;
+      }
+
+      .product-grid {
+        gap: 10px;
+      }
+
+      .product-image {
+        height: 180px;
+        padding: 12px;
+      }
+
+      .product-body {
+        padding: 12px;
+      }
+
+      .product-name {
+        font-size: 0.78rem;
+      }
+
+      .product-spec {
+        font-size: 0.61rem;
+      }
+
+      .product-actions {
+        grid-template-columns: 1fr;
+      }
+
+      .product-actions .btn {
+        min-height: 36px;
+      }
+
+      .electronics-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 9px;
+      }
+
+      .electronics-card {
+        min-height: 150px;
+      }
+
+      .electronics-info {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+      }
+
+      .electronics-info h3 {
+        font-size: 0.76rem;
+      }
+
+      .electronics-info p {
+        font-size: 0.58rem;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .why-card {
+        padding: 17px 13px;
+      }
+
+      .why-card h3 {
+        font-size: 0.75rem;
+      }
+
+      .why-card p {
+        font-size: 0.6rem;
+      }
+
+      .instagram-handle {
+        display: block;
+      }
+
+      .instagram-handle .btn {
+        margin-top: 13px;
+      }
+
+      .location-info {
+        padding: 28px 22px;
+      }
+
+      .contact-info,
+      .contact-form {
+        padding: 25px 20px;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-group.full {
+        grid-column: auto;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 20px;
+      }
+
+      .footer-brand {
+        grid-column: 1 / -1;
+      }
+
+      .footer-bottom {
+        display: block;
+      }
+
+      .footer-bottom span {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .modal {
+        padding: 10px;
+      }
+
+      .modal-content {
+        grid-template-columns: 1fr;
+      }
+
+      .modal-image {
+        min-height: 280px;
+        padding: 25px;
+      }
+
+      .modal-image img {
+        height: 230px;
+      }
+
+      .modal-info {
+        padding: 25px 20px 30px;
+      }
+
+      .modal-info h2 {
+        font-size: 1.45rem;
+      }
+
+      .modal-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* =========================
+       DEMO WATERMARK
+    ========================== */
+
+    .demo-watermark {
+      position: fixed;
+      inset: 0;
+      z-index: 9998;
+      pointer-events: none;
+      user-select: none;
+      overflow: hidden;
+    }
+
+    .demo-watermark span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-32deg);
+      font-size: clamp(4rem, 18vw, 12rem);
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      color: rgba(17, 24, 39, 0.09);
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+
+    .demo-watermark::before,
+    .demo-watermark::after {
+      content: "DEMO";
+      position: absolute;
+      font-size: clamp(2.5rem, 10vw, 6rem);
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      color: rgba(17, 24, 39, 0.06);
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+
+    .demo-watermark::before {
+      top: 18%;
+      left: 8%;
+      transform: rotate(-32deg);
+    }
+
+    .demo-watermark::after {
+      bottom: 12%;
+      right: 5%;
+      transform: rotate(-32deg);
+    }
+  </style>
+
+  <!-- LocalBusiness schema using only confirmed information -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Malani Mobile & Electronic Showroom Dhorimanna",
+    "alternateName": "मालाणी मोबाइल इलेक्ट्रॉनिक्स शोरूम धोरीमन्ना",
+    "url": "https://malanimobileofficel.in/",
+    "email": "ramsinghkhilery1@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jambheshwar Market, Main Chauraha",
+      "addressLocality": "Dhorimanna",
+      "addressRegion": "Rajasthan",
+      "postalCode": "344704",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.instagram.com/malani_mobile_dhorimanna/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- DEMO watermark – this site is a demonstration only -->
+  <div class="demo-watermark" aria-hidden="true">
+    <span>DEMO</span>
+  </div>
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav" id="nav">
+
+        <a href="#home" class="logo">
+          <div class="logo-main">MALANI <span>MOBILE</span></div>
+          <div class="logo-sub">& ELECTRONIC SHOWROOM</div>
+        </a>
+
+        <div class="nav-links">
+          <a href="#home" class="nav-link" data-i18n="navHome">होम</a>
+          <a href="#mobiles" class="nav-link" data-i18n="navMobiles">मोबाइल</a>
+          <a href="#electronics" class="nav-link" data-i18n="navElectronics">इलेक्ट्रॉनिक्स</a>
+          <a href="#accessories" class="nav-link" data-i18n="navAccessories">एक्सेसरीज़</a>
+          <a href="#brands" class="nav-link" data-i18n="navBrands">ब्रांड्स</a>
+          <a href="#offers" class="nav-link" data-i18n="navOffers">ऑफर्स</a>
+          <a href="#about" class="nav-link" data-i18n="navAbout">हमारे बारे में</a>
+          <a href="#contact" class="nav-link" data-i18n="navContact">संपर्क</a>
+        </div>
+
+        <div class="nav-actions">
+
+          <div class="lang-switch">
+            <button class="lang-btn active" data-lang="hi">हिंदी</button>
+            <button class="lang-btn" data-lang="en">English</button>
+          </div>
+
+          <a
+            href="#"
+            class="btn btn-outline call-link"
+            data-i18n="callNow"
+          >📞 कॉल करें</a>
+
+          <a
+            href="#"
+            class="btn btn-whatsapp whatsapp-link"
+            data-i18n="whatsapp"
+          >💬 व्हाट्सऐप</a>
+
+          <button class="hamburger" id="hamburger" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-grid">
+
+          <div class="hero-content reveal">
+
+            <div class="hero-badge">
+              <span class="dot"></span>
+              <span data-i18n="heroBadge">धोरीमन्ना का स्थानीय शोरूम</span>
+            </div>
+
+            <h1 data-i18n="heroTitle">
+              धोरीमन्ना का भरोसेमंद
+              <span class="highlight">मोबाइल और इलेक्ट्रॉनिक्स शोरूम</span>
+            </h1>
+
+            <p class="hero-text" data-i18n="heroText">
+              लेटेस्ट मोबाइल, इलेक्ट्रॉनिक्स, गैजेट्स और एक्सेसरीज़ की जानकारी देखें और कीमत व उपलब्धता के लिए हमसे संपर्क करें।
+            </p>
+
+            <div class="hero-actions">
+              <a href="#mobiles" class="btn btn-primary" data-i18n="exploreProducts">
+                प्रोडक्ट देखें
+              </a>
+
+              <a href="#" class="btn btn-whatsapp whatsapp-link" data-i18n="askWhatsapp">
+                💬 व्हाट्सऐप पर पूछें
+              </a>
+            </div>
+
+            <div class="hero-rating">
+              <div>
+                <div class="rating-stars">★★★★★</div>
+              </div>
+
+              <div class="rating-copy">
+                <strong>4.5 / 5</strong>
+                <span data-i18n="reviewsCount">1,421+ ग्राहक समीक्षाएँ</span>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="hero-visual reveal">
+
+            <div class="showroom-image">
+              <img
+                src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=1200&q=85"
+                alt="Premium mobile and electronics showroom"
+                loading="eager"
+              />
+              <div class="showroom-overlay"></div>
+            </div>
+
+            <div class="hero-product one">
+              <img
+                src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=500&q=80"
+                alt="Smartphone"
+              />
+              <strong>Smartphones</strong>
+              <span data-i18n="availability">उपलब्धता पूछें</span>
+            </div>
+
+            <div class="hero-product two">
+              <img
+                src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=500&q=80"
+                alt="Wireless earbuds"
+              />
+              <strong>Accessories</strong>
+              <span data-i18n="availability">उपलब्धता पूछें</span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         TRUST
+    ====================================================== -->
+
+    <section class="trust-section">
+      <div class="container">
+        <div class="trust-grid">
+
+          <div class="trust-item">
+            <div class="trust-icon">⭐</div>
+            <div>
+              <strong>4.5 / 5</strong>
+              <span data-i18n="googleRating">Google Rating</span>
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon">💬</div>
+            <div>
+              <strong>1,421+</strong>
+              <span data-i18n="customerReviews">Customer Reviews</span>
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon">📦</div>
+            <div>
+              <strong data-i18n="wideRange">Wide Range</strong>
+              <span data-i18n="wideRangeSub">Products & categories</span>
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon">🏪</div>
+            <div>
+              <strong data-i18n="localShowroom">Local Showroom</strong>
+              <span>Dhorimanna</span>
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon">🚚</div>
+            <div>
+              <strong data-i18n="delivery">Delivery Available</strong>
+              <span data-i18n="deliverySub">Ask for details</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         CATEGORIES
+    ====================================================== -->
+
+    <section class="section categories" id="categories">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div>
+            <div class="eyebrow" data-i18n="browse">Browse</div>
+            <h2 class="section-title" data-i18n="shopCategories">
+              श्रेणी के अनुसार देखें
+            </h2>
+            <p class="section-description" data-i18n="categoryDescription">
+              मोबाइल से लेकर होम इलेक्ट्रॉनिक्स और एक्सेसरीज़ तक अलग-अलग कैटेगरी देखें।
+            </p>
+          </div>
+        </div>
+
+        <div class="category-grid">
+
+          <a href="#mobiles" class="category-card reveal">
+            <div class="category-image">
+              <img
+                src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=800&q=80"
+                alt="Smartphones"
+                loading="lazy"
+              />
+            </div>
+            <div class="category-content">
+              <h3 data-i18n="smartphones">📱 स्मार्टफोन</h3>
+              <p data-i18n="smartphoneDesc">लेटेस्ट मोबाइल मॉडल देखें</p>
+            </div>
+            <div class="category-arrow">→</div>
+          </a>
+
+          <a href="#electronics" class="category-card reveal">
+            <div class="category-image">
+              <img
+                src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=80"
+                alt="Smart TV"
+                loading="lazy"
+              />
+            </div>
+            <div class="category-content">
+              <h3 data-i18n="smartTv">📺 स्मार्ट टीवी</h3>
+              <p data-i18n="smartTvDesc">मॉडल और उपलब्धता पूछें</p>
+            </div>
+            <div class="category-arrow">→</div>
+          </a>
+
+          <a href="#electronics" class="category-card reveal">
+            <div class="category-image">
+              <img
+                src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?auto=format&fit=crop&w=800&q=80"
+                alt="Home electronics"
+                loading="lazy"
+              />
+            </div>
+            <div class="category-content">
+              <h3 data-i18n="homeAppliances">🏠 होम अप्लायंसेज़</h3>
+              <p data-i18n="homeAppliancesDesc">घर के लिए इलेक्ट्रॉनिक्स</p>
+            </div>
+            <div class="category-arrow">→</div>
+          </a>
+
+          <a href="#accessories" class="category-card reveal">
+            <div class="category-image">
+              <img
+                src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=800&q=80"
+                alt="Audio accessories"
+                loading="lazy"
+              />
+            </div>
+            <div class="category-content">
+              <h3 data-i18n="audio">🎧 ऑडियो और ईयरफोन</h3>
+              <p data-i18n="audioDesc">ईयरफोन, हेडफोन और स्पीकर्स</p>
+            </div>
+            <div class="category-arrow">→</div>
+          </a>
+
+          <a href="#accessories" class="category-card reveal">
+            <div class="category-image">
+              <img
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80"
+                alt="Smart watches"
+                loading="lazy"
+              />
+            </div>
+            <div class="category-content">
+              <h3 data-i18n="smartWatch">⌚ स्मार्ट वॉच</h3>
+              <p data-i18n="smartWatchDesc">स्मार्ट वॉच और वेयरेबल्स</p>
+            </div>
+            <div class="category-arrow">→</div>
+          </a>
+
+          <a href="#accessories" class="category-card reveal">
+            <div class="category-image">
+              <img
+                src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=800&q=80"
+                alt="Chargers and cables"
+                loading="lazy"
+              />
+            </div>
+            <div class="category-content">
+              <h3 data-i18n="chargers">🔌 चार्जर और केबल</h3>
+              <p data-i18n="chargersDesc">मोबाइल चार्जिंग एक्सेसरीज़</p>
+            </div>
+            <div class="category-arrow">→</div>
+          </a>
+
+          <a href="#electronics" class="category-card reveal">
+            <div class="category-image">
+              <img
+                src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=800&q=80"
+                alt="Electronics gadgets"
+                loading="lazy"
+              />
+            </div>
+            <div class="category-content">
+              <h3 data-i18n="gadgets">💻 इलेक्ट्रॉनिक्स और गैजेट्स</h3>
+              <p data-i18n="gadgetsDesc">उपयोगी टेक गैजेट्स</p>
+            </div>
+            <div class="category-arrow">→</div>
+          </a>
+
+          <a href="#accessories" class="category-card reveal">
+            <div class="category-image">
+              <img
+                src="https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=800&q=80"
+                alt="Mobile accessories"
+                loading="lazy"
+              />
+            </div>
+            <div class="category-content">
+              <h3 data-i18n="mobileAccessories">🛡️ मोबाइल एक्सेसरीज़</h3>
+              <p data-i18n="accessoriesDesc">केस, स्क्रीन प्रोटेक्टर आदि</p>
+            </div>
+            <div class="category-arrow">→</div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         BRANDS
+    ====================================================== -->
+
+    <section class="section" id="brands">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div>
+            <div class="eyebrow" data-i18n="brandsEyebrow">Brands</div>
+            <h2 class="section-title" data-i18n="popularBrands">
+              लोकप्रिय ब्रांड्स
+            </h2>
+            <p class="section-description" data-i18n="brandsDescription">
+              अपने पसंदीदा ब्रांड को चुनें और उपलब्ध मॉडल देखें।
+            </p>
+          </div>
+        </div>
+
+        <div class="brands-strip" id="brandFilters"></div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         MOBILE CATALOGUE
+    ====================================================== -->
+
+    <section class="section" id="mobiles">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div>
+            <div class="eyebrow" data-i18n="mobileEyebrow">Mobile Catalogue</div>
+            <h2 class="section-title" data-i18n="latestMobiles">
+              लेटेस्ट स्मार्टफोन
+            </h2>
+            <p class="section-description" data-i18n="mobileDescription">
+              मोबाइल मॉडल और उनकी जानकारी देखें। कीमत और उपलब्धता के लिए पूछें।
+            </p>
+          </div>
+        </div>
+
+        <div class="catalog-toolbar">
+          <div class="search-box">
+            <input
+              type="search"
+              id="productSearch"
+              data-placeholder-hi="मोबाइल या प्रोडक्ट खोजें..."
+              data-placeholder-en="Search mobile or product..."
+              placeholder="मोबाइल या प्रोडक्ट खोजें..."
+              aria-label="Search products"
+            />
+            <span class="search-icon">⌕</span>
+          </div>
+
+          <div class="catalog-count" id="catalogCount"></div>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         ACCESSORIES
+    ====================================================== -->
+
+    <section class="section" id="accessories">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div>
+            <div class="eyebrow" data-i18n="accessoriesEyebrow">Accessories</div>
+            <h2 class="section-title" data-i18n="accessoriesTitle">
+              मोबाइल एक्सेसरीज़
+            </h2>
+            <p class="section-description" data-i18n="accessoriesDescription">
+              चार्जर, केबल, ईयरफोन, केस, पावर बैंक और अन्य एक्सेसरीज़ के लिए उपलब्धता पूछें।
+            </p>
+          </div>
+        </div>
+
+        <div class="product-grid" id="accessoryGrid"></div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         ELECTRONICS
+    ====================================================== -->
+
+    <section class="section electronics" id="electronics">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div>
+            <div class="eyebrow" data-i18n="electronicsEyebrow">Home Electronics</div>
+            <h2 class="section-title" data-i18n="electronicsTitle">
+              आपके घर के लिए इलेक्ट्रॉनिक्स
+            </h2>
+            <p class="section-description" data-i18n="electronicsDescription">
+              अलग-अलग इलेक्ट्रॉनिक्स कैटेगरी देखें। मॉडल और उपलब्धता के लिए संपर्क करें।
+            </p>
+          </div>
+        </div>
+
+        <div class="electronics-grid">
+
+          <div class="electronics-card reveal">
+            <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=700&q=80" alt="Televisions" loading="lazy">
+            <div class="electronics-info">
+              <h3 data-i18n="televisions">टेलीविज़न</h3>
+              <p data-i18n="askModels">मॉडल और उपलब्धता पूछें</p>
+            </div>
+          </div>
+
+          <div class="electronics-card reveal">
+            <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=700&q=80" alt="Refrigerator" loading="lazy">
+            <div class="electronics-info">
+              <h3 data-i18n="refrigerators">रेफ्रिजरेटर</h3>
+              <p data-i18n="askModels">मॉडल और उपलब्धता पूछें</p>
+            </div>
+          </div>
+
+          <div class="electronics-card reveal">
+            <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=700&q=80" alt="Washing machine" loading="lazy">
+            <div class="electronics-info">
+              <h3 data-i18n="washingMachines">वॉशिंग मशीन</h3>
+              <p data-i18n="askModels">मॉडल और उपलब्धता पूछें</p>
+            </div>
+          </div>
+
+          <div class="electronics-card reveal">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNoaQNnX2XcvT1DEI8xiKf9VFrkBcyrd83clchsEZZ9w&s=10" alt="Kitchen appliances" loading="lazy">
+            <div class="electronics-info">
+              <h3 data-i18n="kitchen">किचन अप्लायंसेज़</h3>
+              <p data-i18n="askModels">मॉडल और उपलब्धता पूछें</p>
+            </div>
+          </div>
+
+          <div class="electronics-card reveal">
+            <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=700&q=80" alt="Speakers" loading="lazy">
+            <div class="electronics-info">
+              <h3 data-i18n="speakers">स्पीकर्स</h3>
+              <p data-i18n="askModels">मॉडल और उपलब्धता पूछें</p>
+            </div>
+          </div>
+
+          <div class="electronics-card reveal">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrVIeiGykgFJdMopeK5TXLKpeLiwBDm7U8QeD_QKFERg&s=10" alt="Fans" loading="lazy">
+            <div class="electronics-info">
+              <h3 data-i18n="fans">फैन</h3>
+              <p data-i18n="askModels">मॉडल और उपलब्धता पूछें</p>
+            </div>
+          </div>
+
+          <div class="electronics-card reveal">
+            <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=700&q=80" alt="Small appliances" loading="lazy">
+            <div class="electronics-info">
+              <h3 data-i18n="smallAppliances">स्मॉल अप्लायंसेज़</h3>
+              <p data-i18n="askModels">मॉडल और उपलब्धता पूछें</p>
+            </div>
+          </div>
+
+          <div class="electronics-card reveal">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=700&q=80" alt="Other electronics" loading="lazy">
+            <div class="electronics-info">
+              <h3 data-i18n="otherElectronics">अन्य इलेक्ट्रॉनिक्स</h3>
+              <p data-i18n="askModels">मॉडल और उपलब्धता पूछें</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         OFFERS
+    ====================================================== -->
+
+    <section class="section" id="offers">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div>
+            <div class="eyebrow" data-i18n="offersEyebrow">Showroom Updates</div>
+            <h2 class="section-title" data-i18n="specialOffers">
+              खास ऑफर्स
+            </h2>
+            <p class="section-description" data-i18n="offersDescription">
+              ऑफर्स और नए प्रोडक्ट की जानकारी के लिए शोरूम से संपर्क करें।
+            </p>
+          </div>
+        </div>
+
+        <div class="offers-grid">
+
+          <div class="offer-card reveal">
+            <span data-i18n="offerOneLabel">NEW</span>
+            <h3 data-i18n="newArrivals">नए प्रोडक्ट</h3>
+            <p data-i18n="newArrivalsDesc">
+              नए मोबाइल और इलेक्ट्रॉनिक्स मॉडल के बारे में पूछें।
+            </p>
+            <a href="#" class="offer-link whatsapp-link" data-i18n="askAvailability">
+              उपलब्धता पूछें →
+            </a>
+          </div>
+
+          <div class="offer-card reveal">
+            <span data-i18n="offerTwoLabel">OFFERS</span>
+            <h3 data-i18n="festivalOffers">फेस्टिवल ऑफर्स</h3>
+            <p data-i18n="festivalOffersDesc">
+              वर्तमान ऑफर और शर्तों के लिए हमसे संपर्क करें।
+            </p>
+            <a href="#" class="offer-link whatsapp-link" data-i18n="askAvailability">
+              उपलब्धता पूछें →
+            </a>
+          </div>
+
+          <div class="offer-card reveal">
+            <span data-i18n="offerThreeLabel">EXCHANGE</span>
+            <h3 data-i18n="exchangeOffers">एक्सचेंज ऑफर्स</h3>
+            <p data-i18n="exchangeOffersDesc">
+              एक्सचेंज विकल्पों की वर्तमान जानकारी के लिए पूछें।
+            </p>
+            <a href="#" class="offer-link whatsapp-link" data-i18n="askAvailability">
+              जानकारी पूछें →
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         WHY CHOOSE US
+    ====================================================== -->
+
+    <section class="section" id="about">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div>
+            <div class="eyebrow" data-i18n="aboutEyebrow">About Showroom</div>
+            <h2 class="section-title" data-i18n="whyChoose">
+              हमें क्यों चुनें?
+            </h2>
+            <p class="section-description" data-i18n="whyDescription">
+              धोरीमन्ना में मोबाइल, इलेक्ट्रॉनिक्स और एक्सेसरीज़ के लिए अपने स्थानीय शोरूम से जुड़ें।
+            </p>
+          </div>
+        </div>
+
+        <div class="why-grid">
+
+          <div class="why-card reveal">
+            <div class="why-icon">📱</div>
+            <h3 data-i18n="wideProductRange">उत्पादों की विस्तृत रेंज</h3>
+            <p data-i18n="wideProductRangeDesc">मोबाइल और इलेक्ट्रॉनिक्स की अलग-अलग कैटेगरी।</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon">🛍️</div>
+            <h3 data-i18n="pickup">स्टोर से पिकअप</h3>
+            <p data-i18n="pickupDesc">उपलब्धता के बारे में पहले पूछें।</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon">🚚</div>
+            <h3 data-i18n="deliveryAvailable">डिलीवरी उपलब्ध</h3>
+            <p data-i18n="deliveryAvailableDesc">डिलीवरी विवरण के लिए संपर्क करें।</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon">🤝</div>
+            <h3 data-i18n="helpfulService">मददगार सेवा</h3>
+            <p data-i18n="helpfulServiceDesc">प्रोडक्ट जानकारी के लिए हमसे बात करें।</p>
+          </div>
+
+          <div class="why-card reveal">
+            <div class="why-icon">📍</div>
+            <h3 data-i18n="convenientLocation">सुविधाजनक स्थान</h3>
+            <p data-i18n="convenientLocationDesc">Jambheshwar Market, Main Chauraha.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         REVIEWS
+    ====================================================== -->
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+
+        <div class="review-layout">
+
+          <div class="reveal">
+            <div class="rating-big">4.5</div>
+            <div class="rating-stars-big">★★★★★</div>
+            <div class="rating-reviews" data-i18n="reviewsCount">
+              1,421+ ग्राहक समीक्षाएँ
+            </div>
+          </div>
+
+          <div class="review-note reveal">
+            <h2 class="section-title" style="font-size:2rem;" data-i18n="customerReviewsTitle">
+              ग्राहक समीक्षाएँ
+            </h2>
+
+            <p data-i18n="reviewsNote">
+              Google पर उपलब्ध वास्तविक ग्राहक समीक्षाएँ देखें। हम वेबसाइट पर बिना सत्यापन के कोई ग्राहक testimonial प्रकाशित नहीं करते।
+            </p>
+
+            <a
+              href="#"
+              class="btn btn-primary maps-review-link"
+              data-i18n="readReviews"
+            >
+              Google पर समीक्षाएँ देखें
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         INSTAGRAM
+    ====================================================== -->
+
+    <section class="section" id="instagram">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <div>
+            <div class="eyebrow">Instagram</div>
+            <h2 class="section-title" data-i18n="followInstagram">
+              Instagram पर हमें फ़ॉलो करें
+            </h2>
+            <p class="section-description">
+              @malani_mobile_dhorimanna
+            </p>
+          </div>
+        </div>
+
+        <div class="instagram-grid">
+
+          <a href="https://www.instagram.com/malani_mobile_dhorimanna/" target="_blank" rel="noopener" class="insta-card reveal">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=700&q=80" alt="Mobile phone" loading="lazy">
+            <div class="insta-overlay">◎</div>
+          </a>
+
+          <a href="https://www.instagram.com/malani_mobile_dhorimanna/" target="_blank" rel="noopener" class="insta-card reveal">
+            <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=700&q=80" alt="Smartphone" loading="lazy">
+            <div class="insta-overlay">◎</div>
+          </a>
+
+          <a href="https://www.instagram.com/malani_mobile_dhorimanna/" target="_blank" rel="noopener" class="insta-card reveal">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80" alt="Smart watch" loading="lazy">
+            <div class="insta-overlay">◎</div>
+          </a>
+
+          <a href="https://www.instagram.com/malani_mobile_dhorimanna/" target="_blank" rel="noopener" class="insta-card reveal">
+            <img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=700&q=80" alt="Earbuds" loading="lazy">
+            <div class="insta-overlay">◎</div>
+          </a>
+
+        </div>
+
+        <div class="instagram-handle reveal">
+          <div>
+            <strong>@malani_mobile_dhorimanna</strong>
+            <span data-i18n="instagramStatic">
+              वेबसाइट पर दिखाई गई तस्वीरें static showcase हैं।
+            </span>
+          </div>
+
+          <a
+            href="https://www.instagram.com/malani_mobile_dhorimanna/"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-dark"
+            data-i18n="followOnInstagram"
+          >
+            Instagram पर फ़ॉलो करें
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         LOCATION
+    ====================================================== -->
+
+    <section class="section location" id="location">
+      <div class="container">
+
+        <div class="location-card">
+
+          <div class="location-info reveal">
+
+            <div class="eyebrow" data-i18n="visitEyebrow">Visit Us</div>
+
+            <h2 data-i18n="visitShowroom">
+              हमारे शोरूम पर आएँ
+            </h2>
+
+            <div class="address">
+
+              <div class="address-icon">📍</div>
+
+              <p>
+                Jambheshwar Market,<br>
+                Main Chauraha,<br>
+                Dhorimana, Dhorimanna,<br>
+                Rajasthan – 344704
+              </p>
+
+            </div>
+
+            <div class="location-actions">
+
+              <a
+                href="#"
+                class="btn btn-primary maps-link"
+                data-i18n="getDirections"
+              >
+                📍 दिशा-निर्देश प्राप्त करें
+              </a>
+
+              <a
+                href="#contact"
+                class="btn btn-outline"
+                data-i18n="contactUs"
+              >
+                संपर्क करें
+              </a>
+
+            </div>
+
+          </div>
+
+          <div class="map-placeholder reveal">
+
+            <div class="map-placeholder-inner">
+              <div class="pin">📍</div>
+
+              <h3>Malani Mobile & Electronic Showroom</h3>
+
+              <p>
+                Jambheshwar Market, Main Chauraha,
+                Dhorimana, Rajasthan – 344704
+              </p>
+
+              <a
+                href="#"
+                class="btn btn-primary maps-link"
+                style="margin-top:16px;"
+                data-i18n="openMaps"
+              >
+                Google Maps खोलें
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT
+    ====================================================== -->
+
+    <section class="section" id="contact">
+      <div class="container">
+
+        <div class="contact-grid">
+
+          <div class="contact-info reveal">
+
+            <div class="eyebrow" style="color:#ff8a00;" data-i18n="contactEyebrow">
+              Contact
+            </div>
+
+            <h2 data-i18n="contactTitle">
+              जानकारी चाहिए?
+            </h2>
+
+            <p data-i18n="contactDescription">
+              प्रोडक्ट की कीमत और उपलब्धता के लिए हमसे संपर्क करें।
+            </p>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">🏪</div>
+              <div>
+                <strong data-i18n="storeNameLabel">शोरूम</strong>
+                <span>Malani Mobile & Electronic Showroom Dhorimanna</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div>
+                <strong data-i18n="addressLabel">पता</strong>
+                <span>Jambheshwar Market, Main Chauraha, Dhorimana, Dhorimanna, Rajasthan – 344704</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">✉️</div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:ramsinghkhilery1@gmail.com">
+                  ramsinghkhilery1@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <div>
+                <strong data-i18n="phoneLabel">फोन</strong>
+                <a href="#" class="call-link" data-phone-display>
+                  <span data-i18n="phoneNotConfigured">फोन नंबर कॉन्फ़िगर नहीं किया गया</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="contact-form reveal">
+
+            <div class="section-header" style="display:block;margin-bottom:25px;">
+              <div>
+                <div class="eyebrow" data-i18n="enquiryEyebrow">Enquiry</div>
+                <h2 class="section-title" style="font-size:1.8rem;" data-i18n="sendEnquiry">
+                  पूछताछ भेजें
+                </h2>
+              </div>
+            </div>
+
+            <form id="enquiryForm">
+
+              <div class="form-grid">
+
+                <div class="form-group">
+                  <label class="form-label" for="name" data-i18n="name">
+                    नाम
+                  </label>
+                  <input
+                    class="form-input"
+                    id="name"
+                    type="text"
+                    required
+                    maxlength="80"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="phone" data-i18n="mobileNumber">
+                    मोबाइल नंबर
+                  </label>
+                  <input
+                    class="form-input"
+                    id="phone"
+                    type="tel"
+                    required
+                    maxlength="15"
+                  />
+                </div>
+
+                <div class="form-group full">
+                  <label class="form-label" for="product" data-i18n="product">
+                    प्रोडक्ट
+                  </label>
+                  <input
+                    class="form-input"
+                    id="product"
+                    type="text"
+                    maxlength="100"
+                    data-placeholder-hi="किस प्रोडक्ट के बारे में पूछना है?"
+                    data-placeholder-en="Which product are you interested in?"
+                    placeholder="किस प्रोडक्ट के बारे में पूछना है?"
+                  />
+                </div>
+
+                <div class="form-group full">
+                  <label class="form-label" for="message" data-i18n="message">
+                    संदेश
+                  </label>
+                  <textarea
+                    class="form-input"
+                    id="message"
+                    maxlength="500"
+                    data-placeholder-hi="अपना सवाल लिखें..."
+                    data-placeholder-en="Write your enquiry..."
+                    placeholder="अपना सवाल लिखें..."
+                  ></textarea>
+                </div>
+
+              </div>
+
+              <button type="submit" class="btn btn-primary" data-i18n="sendOnWhatsapp">
+                💬 व्हाट्सऐप पर भेजें
+              </button>
+
+              <div class="form-message" id="formMessage"></div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+
+          <div class="logo">
+            <div class="logo-main" style="color:white;">
+              MALANI <span>MOBILE</span>
+            </div>
+
+            <div class="logo-sub" style="color:#64748b;">
+              & ELECTRONIC SHOWROOM
+            </div>
+          </div>
+
+          <p data-i18n="footerDescription">
+            धोरीमन्ना में मोबाइल, इलेक्ट्रॉनिक्स, गैजेट्स और एक्सेसरीज़ के लिए डिजिटल शोरूम।
+          </p>
+
+        </div>
+
+
+        <div class="footer-column">
+          <h3 data-i18n="company">कंपनी</h3>
+          <a href="#home" data-i18n="navHome">होम</a>
+          <a href="#about" data-i18n="navAbout">हमारे बारे में</a>
+          <a href="#contact" data-i18n="navContact">संपर्क</a>
+        </div>
+
+
+        <div class="footer-column">
+          <h3 data-i18n="products">प्रोडक्ट</h3>
+          <a href="#mobiles" data-i18n="navMobiles">मोबाइल</a>
+          <a href="#electronics" data-i18n="navElectronics">इलेक्ट्रॉनिक्स</a>
+          <a href="#accessories" data-i18n="navAccessories">एक्सेसरीज़</a>
+          <a href="#brands" data-i18n="navBrands">ब्रांड्स</a>
+        </div>
+
+
+        <div class="footer-column">
+          <h3 data-i18n="customer">ग्राहक</h3>
+          <a href="#" class="whatsapp-link" data-i18n="whatsapp">व्हाट्सऐप</a>
+          <a href="#" class="call-link" data-i18n="callNow">कॉल करें</a>
+          <a href="#location" data-i18n="directions">दिशा-निर्देश</a>
+          <a href="#contact" data-i18n="enquiry">पूछताछ</a>
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+        <span data-i18n="copyright">
+          © मालाणी मोबाइल इलेक्ट्रॉनिक्स शोरूम धोरीमन्ना. सर्वाधिकार सुरक्षित।
+        </span>
+
+        <span>malanimobileofficel.in</span>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =====================================================
+       DESKTOP FLOATING BUTTONS
+  ====================================================== -->
+
+  <div class="floating-actions">
+
+    <a
+      href="#"
+      class="float-btn float-whatsapp whatsapp-link"
+      aria-label="WhatsApp"
+    >
+      💬
+    </a>
+
+    <a
+      href="#"
+      class="float-btn float-call call-link"
+      aria-label="Call"
+    >
+      📞
+    </a>
+
+  </div>
+
+
+  <!-- =====================================================
+       MOBILE BOTTOM ACTIONS
+  ====================================================== -->
+
+  <div class="mobile-bottom">
+
+    <a href="#" class="call-link">
+      <span>📞</span>
+      <span data-i18n="call">कॉल</span>
+    </a>
+
+    <a href="#" class="whatsapp-link">
+      <span>💬</span>
+      <span data-i18n="whatsappShort">व्हाट्सऐप</span>
+    </a>
+
+    <a href="#location">
+      <span>📍</span>
+      <span data-i18n="directions">दिशा-निर्देश</span>
+    </a>
+
+  </div>
+
+
+  <!-- =====================================================
+       PRODUCT MODAL
+  ====================================================== -->
+
+  <div class="modal" id="productModal">
+
+    <div class="modal-card">
+
+      <button
+        class="modal-close"
+        id="modalClose"
+        aria-label="Close"
+      >
+        ×
+      </button>
+
+      <div class="modal-content">
+
+        <div class="modal-image">
+          <img id="modalImage" src="" alt="" />
+        </div>
+
+        <div class="modal-info">
+
+          <div class="modal-brand" id="modalBrand"></div>
+
+          <h2 id="modalName"></h2>
+
+          <p class="modal-spec" id="modalSpec"></p>
+
+          <div class="availability" data-i18n="availability">
+            उपलब्धता पूछें
+          </div>
+
+          <div class="modal-section-title" data-i18n="keyDetails">
+            मुख्य जानकारी
+          </div>
+
+          <ul class="spec-list" id="modalSpecs"></ul>
+
+          <div class="modal-actions">
+
+            <a
+              href="#"
+              class="btn btn-whatsapp"
+              id="modalWhatsapp"
+              data-i18n="askWhatsapp"
+            >
+              💬 व्हाट्सऐप पर पूछें
+            </a>
+
+            <a
+              href="#"
+              class="btn btn-outline call-link"
+              id="modalCall"
+              data-i18n="callNow"
+            >
+              📞 कॉल करें
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
+  <script>
+    /* =====================================================
+       STORE CONFIGURATION
+       ===================================================== */
+
+    const STORE = {
+      phone: "9950677383",
+      whatsapp: "919950677383",
+      mapsUrl: "",
+      googleBusinessUrl: "",
+      instagram: "https://www.instagram.com/malani_mobile_dhorimanna/",
+      email: "ramsinghkhilery1@gmail.com"
+    };
+
+
+    /* =====================================================
+       PRODUCT DATA
+
+       These are SHOWCASE examples only.
+       They do NOT contain prices or stock claims.
+       Replace/add products as needed.
+       ===================================================== */
+
+    const products = [
+
+      {
+        id: 1,
+        name: "iPhone — Example Model",
+        brand: "Apple",
+        category: "mobile",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDKYu1-hy6RYmiq2A2VGwJK021dYNAbYIC3uFjKJbCfw&s=10",
+        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specs: [
+          "Apple smartphone",
+          "Model details configurable",
+          "Current availability पूछें"
+        ]
+      },
+
+      {
+        id: 2,
+        name: "Galaxy — Example Model",
+        brand: "Samsung",
+        category: "mobile",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8B1TcHuGgrDXF8o__I_LqtKyJXIHAANU9gK3x9qtHyg&s=10",
+        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specs: [
+          "Samsung smartphone",
+          "Model details configurable",
+          "Current availability पूछें"
+        ]
+      },
+
+      {
+        id: 3,
+        name: "OnePlus — Example Model",
+        brand: "OnePlus",
+        category: "mobile",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSltvhejGB1UXsrF5EfiPfXo-PT42RBTvAcQjZfl-CYKg&s=10",
+        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specs: [
+          "OnePlus smartphone",
+          "Model details configurable",
+          "Current availability पूछें"
+        ]
+      },
+
+      {
+        id: 4,
+        name: "vivo — Example Model",
+        brand: "vivo",
+        category: "mobile",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVCiZgdJEzIEmAozMOwqv16VWCW8znGj5Zv5aCXjdSvg&s=10",
+        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specs: [
+          "vivo smartphone",
+          "Model details configurable",
+          "Current availability पूछें"
+        ]
+      },
+
+      {
+        id: 5,
+        name: "OPPO — Example Model",
+        brand: "OPPO",
+        category: "mobile",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD8nlqhYa8EKxeGAfe4NkX-NAOX-5WIhfARGJ7AOsphQ&s=10",
+        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specs: [
+          "OPPO smartphone",
+          "Model details configurable",
+          "Current availability पूछें"
+        ]
+      },
+
+      {
+        id: 6,
+        name: "realme — Example Model",
+        brand: "realme",
+        category: "mobile",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZFqvzlgEZbkd1-BTovazuMcoZNCV2L3Jfy64WsdCOvw&s=10",
+        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specs: [
+          "realme smartphone",
+          "Model details configurable",
+          "Current availability पूछें"
+        ]
+      },
+
+      {
+        id: 7,
+        name: "iQOO — Example Model",
+        brand: "iQOO",
+        category: "mobile",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGObYL545M-ASug3ud7LXYdlSHs7nwxfEWQooE-f0rCA&s=10",
+        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specs: [
+          "iQOO smartphone",
+          "Model details configurable",
+          "Current availability पूछें"
+        ]
+      },
+
+      {
+        id: 8,
+        name: "Redmi — Example Model",
+        brand: "Redmi",
+        category: "mobile",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuXobNuEsi8DC2D5Ex3N2Jf0DejCXvDcuDN4yIho5Y1w&s=10",
+        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specs: [
+          "Redmi smartphone",
+          "Model details configurable",
+          "Current availability पूछें"
+        ]
+      },
+
+      {
+        id: 9,
+        name: "Motorola — Example Model",
+        brand: "Motorola",
+        category: "mobile",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFM-B3g_XwsJbXR9qitO6fqSqGr728NP9rna-sVqvpmQ&s=10",
+        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specs: [
+          "Motorola smartphone",
+          "Model details configurable",
+          "Current availability पूछें"
+        ]
+      },
+
+      {
+        id: 10,
+        name: "POCO — Example Model",
+        brand: "POCO",
+        category: "mobile",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNcLbud32WAHY3ty2UWiG8mtpsrf4Bqi7J3y0iK-c6-Q&s",
+        specification: "Example showcase product • कीमत और उपलब्धता पूछें",
+        specs: [
+          "POCO smartphone",
+          "Model details configurable",
+          "Current availability पूछें"
+        ]
+      },
+
+      {
+        id: 11,
+        name: "Wireless Earbuds",
+        brand: "Audio",
+        category: "accessory",
+        image: "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=700&q=80",
+        specification: "Example accessory • उपलब्धता पूछें",
+        specs: [
+          "Wireless earbuds",
+          "Brand/model configurable",
+          "Current availability पूछें"
+        ]
+      },
+
+      {
+        id: 12,
+        name: "Smart Watch",
+        brand: "Wearables",
+        category: "accessory",
+        image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80",
+        specification: "Example accessory • उपलब्धता पूछें",
+        specs: [
+          "Smart watch",
+          "Brand/model configurable",
+          "Current availability पूछें"
+        ]
+      },
+
+      {
+        id: 13,
+        name: "Mobile Charger",
+        brand: "Accessories",
+        category: "accessory",
+        image: "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=700&q=80",
+        specification: "Example accessory • उपलब्धता पूछें",
+        specs: [
+          "Mobile charger",
+          "Brand/model configurable",
+          "Current availability पूछें"
+        ]
+      },
+
+      {
+        id: 14,
+        name: "Power Bank",
+        brand: "Accessories",
+        category: "accessory",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKGIz6KRlz9xwZbSu2N__MNRIe6nT1t1Q8vWgI2ImKng&s=10",
+        specification: "Example accessory • उपलब्धता पूछें",
+        specs: [
+          "Power bank",
+          "Capacity/model configurable",
+          "Current availability पूछें"
+        ]
+      }
+
+    ];
+
+
+    /* =====================================================
+       TRANSLATIONS
+    ===================================================== */
+
+    const translations = {
+
+      hi: {
+
+        navHome: "होम",
+        navMobiles: "मोबाइल",
+        navElectronics: "इलेक्ट्रॉनिक्स",
+        navAccessories: "एक्सेसरीज़",
+        navBrands: "ब्रांड्स",
+        navOffers: "ऑफर्स",
+        navAbout: "हमारे बारे में",
+        navContact: "संपर्क",
+
+        callNow: "📞 कॉल करें",
+        whatsapp: "💬 व्हाट्सऐप",
+        whatsappShort: "व्हाट्सऐप",
+        call: "कॉल",
+        directions: "दिशा-निर्देश",
+
+        heroBadge: "धोरीमन्ना का स्थानीय शोरूम",
+
+        heroTitle: "धोरीमन्ना का भरोसेमंद मोबाइल और इलेक्ट्रॉनिक्स शोरूम",
+
+        heroText:
+          "लेटेस्ट मोबाइल, इलेक्ट्रॉनिक्स, गैजेट्स और एक्सेसरीज़ की जानकारी देखें और कीमत व उपलब्धता के लिए हमसे संपर्क करें।",
+
+        exploreProducts: "प्रोडक्ट देखें",
+        askWhatsapp: "💬 व्हाट्सऐप पर पूछें",
+
+        reviewsCount: "1,421+ ग्राहक समीक्षाएँ",
+
+        googleRating: "Google Rating",
+        customerReviews: "Customer Reviews",
+        wideRange: "Wide Range",
+        wideRangeSub: "Products & categories",
+        localShowroom: "Local Showroom",
+        delivery: "Delivery Available",
+        deliverySub: "Ask for details",
+
+        browse: "Browse",
+        shopCategories: "श्रेणी के अनुसार देखें",
+        categoryDescription:
+          "मोबाइल से लेकर होम इलेक्ट्रॉनिक्स और एक्सेसरीज़ तक अलग-अलग कैटेगरी देखें।",
+
+        smartphones: "📱 स्मार्टफोन",
+        smartphoneDesc: "लेटेस्ट मोबाइल मॉडल देखें",
+
+        smartTv: "📺 स्मार्ट टीवी",
+        smartTvDesc: "मॉडल और उपलब्धता पूछें",
+
+        homeAppliances: "🏠 होम अप्लायंसेज़",
+        homeAppliancesDesc: "घर के लिए इलेक्ट्रॉनिक्स",
+
+        audio: "🎧 ऑडियो और ईयरफोन",
+        audioDesc: "ईयरफोन, हेडफोन और स्पीकर्स",
+
+        smartWatch: "⌚ स्मार्ट वॉच",
+        smartWatchDesc: "स्मार्ट वॉच और वेयरेबल्स",
+
+        chargers: "🔌 चार्जर और केबल",
+        chargersDesc: "मोबाइल चार्जिंग एक्सेसरीज़",
+
+        gadgets: "💻 इलेक्ट्रॉनिक्स और गैजेट्स",
+        gadgetsDesc: "उपयोगी टेक गैजेट्स",
+
+        mobileAccessories: "🛡️ मोबाइल एक्सेसरीज़",
+        accessoriesDesc: "केस, स्क्रीन प्रोटेक्टर आदि",
+
+        brandsEyebrow: "Brands",
+        popularBrands: "लोकप्रिय ब्रांड्स",
+        brandsDescription:
+          "अपने पसंदीदा ब्रांड को चुनें और उपलब्ध मॉडल देखें.",
+
+        mobileEyebrow: "Mobile Catalogue",
+        latestMobiles: "लेटेस्ट स्मार्टफोन",
+        mobileDescription:
+          "मोबाइल मॉडल और उनकी जानकारी देखें। कीमत और उपलब्धता के लिए पूछें।",
+
+        availability: "उपलब्धता पूछें",
+        keyDetails: "मुख्य जानकारी",
+
+        accessoriesEyebrow: "Accessories",
+        accessoriesTitle: "मोबाइल एक्सेसरीज़",
+        accessoriesDescription:
+          "चार्जर, केबल, ईयरफोन, केस, पावर बैंक और अन्य एक्सेसरीज़ के लिए उपलब्धता पूछें।",
+
+        electronicsEyebrow: "Home Electronics",
+        electronicsTitle: "आपके घर के लिए इलेक्ट्रॉनिक्स",
+        electronicsDescription:
+          "अलग-अलग इलेक्ट्रॉनिक्स कैटेगरी देखें। मॉडल और उपलब्धता के लिए संपर्क करें।",
+
+        televisions: "टेलीविज़न",
+        refrigerators: "रेफ्रिजरेटर",
+        washingMachines: "वॉशिंग मशीन",
+        kitchen: "किचन अप्लायंसेज़",
+        speakers: "स्पीकर्स",
+        fans: "फैन",
+        smallAppliances: "स्मॉल अप्लायंसेज़",
+        otherElectronics: "अन्य इलेक्ट्रॉनिक्स",
+        askModels: "मॉडल और उपलब्धता पूछें",
+
+        offersEyebrow: "Showroom Updates",
+        specialOffers: "खास ऑफर्स",
+        offersDescription:
+          "ऑफर्स और नए प्रोडक्ट की जानकारी के लिए शोरूम से संपर्क करें।",
+
+        offerOneLabel: "NEW",
+        offerTwoLabel: "OFFERS",
+        offerThreeLabel: "EXCHANGE",
+
+        newArrivals: "नए प्रोडक्ट",
+        newArrivalsDesc:
+          "नए मोबाइल और इलेक्ट्रॉनिक्स मॉडल के बारे में पूछें।",
+
+        festivalOffers: "फेस्टिवल ऑफर्स",
+        festivalOffersDesc:
+          "वर्तमान ऑफर और शर्तों के लिए हमसे संपर्क करें।",
+
+        exchangeOffers: "एक्सचेंज ऑफर्स",
+        exchangeOffersDesc:
+          "एक्सचेंज विकल्पों की वर्तमान जानकारी के लिए पूछें।",
+
+        askAvailability: "उपलब्धता पूछें →",
+
+        aboutEyebrow: "About Showroom",
+        whyChoose: "हमें क्यों चुनें?",
+        whyDescription:
+          "धोरीमन्ना में मोबाइल, इलेक्ट्रॉनिक्स और एक्सेसरीज़ के लिए अपने स्थानीय शोरूम से जुड़ें।",
+
+        wideProductRange: "उत्पादों की विस्तृत रेंज",
+        wideProductRangeDesc: "मोबाइल और इलेक्ट्रॉनिक्स की अलग-अलग कैटेगरी।",
+
+        pickup: "स्टोर से पिकअप",
+        pickupDesc: "उपलब्धता के बारे में पहले पूछें।",
+
+        deliveryAvailable: "डिलीवरी उपलब्ध",
+        deliveryAvailableDesc: "डिलीवरी विवरण के लिए संपर्क करें।",
+
+        helpfulService: "मददगार सेवा",
+        helpfulServiceDesc: "प्रोडक्ट जानकारी के लिए हमसे बात करें।",
+
+        convenientLocation: "सुविधाजनक स्थान",
+        convenientLocationDesc: "Jambheshwar Market, Main Chauraha.",
+
+        customerReviewsTitle: "ग्राहक समीक्षाएँ",
+        reviewsNote:
+          "Google पर उपलब्ध वास्तविक ग्राहक समीक्षाएँ देखें। हम वेबसाइट पर बिना सत्यापन के कोई ग्राहक testimonial प्रकाशित नहीं करते।",
+        readReviews: "Google पर समीक्षाएँ देखें",
+
+        followInstagram: "Instagram पर हमें फ़ॉलो करें",
+        instagramStatic:
+          "वेबसाइट पर दिखाई गई तस्वीरें static showcase हैं।",
+        followOnInstagram: "Instagram पर फ़ॉलो करें",
+
+        visitEyebrow: "Visit Us",
+        visitShowroom: "हमारे शोरूम पर आएँ",
+        getDirections: "📍 दिशा-निर्देश प्राप्त करें",
+        contactUs: "संपर्क करें",
+        openMaps: "Google Maps खोलें",
+
+        contactEyebrow: "Contact",
+        contactTitle: "जानकारी चाहिए?",
+        contactDescription:
+          "प्रोडक्ट की कीमत और उपलब्धता के लिए हमसे संपर्क करें.",
+
+        storeNameLabel: "शोरूम",
+        addressLabel: "पता",
+        phoneLabel: "फोन",
+        phoneNotConfigured: "फोन नंबर कॉन्फ़िगर नहीं किया गया",
+
+        enquiryEyebrow: "Enquiry",
+        sendEnquiry: "पूछताछ भेजें",
+        name: "नाम",
+        mobileNumber: "मोबाइल नंबर",
+        product: "प्रोडक्ट",
+        message: "संदेश",
+        sendOnWhatsapp: "💬 व्हाट्सऐप पर भेजें",
+
+        footerDescription:
+          "धोरीमन्ना में मोबाइल, इलेक्ट्रॉनिक्स, गैजेट्स और एक्सेसरीज़ के लिए डिजिटल शोरूम।",
+
+        company: "कंपनी",
+        products: "प्रोडक्ट",
+        customer: "ग्राहक",
+        enquiry: "पूछताछ",
+
+        copyright:
+          "© मालाणी मोबाइल इलेक्ट्रॉनिक्स शोरूम धोरीमन्ना. सर्वाधिकार सुरक्षित।",
+
+        searchCount: "प्रोडक्ट",
+        noProducts: "कोई प्रोडक्ट नहीं मिला",
+        noProductsDescription:
+          "अपनी खोज या ब्रांड बदलकर दोबारा प्रयास करें।",
+
+        whatsappMessage:
+          "नमस्ते मालाणी मोबाइल इलेक्ट्रॉनिक्स शोरूम, मुझे [PRODUCT] के बारे में जानकारी चाहिए। कृपया वर्तमान कीमत और उपलब्धता बताएं।",
+
+        generalWhatsappMessage:
+          "नमस्ते मालाणी मोबाइल इलेक्ट्रॉनिक्स शोरूम, मुझे आपके प्रोडक्ट्स के बारे में जानकारी चाहिए। कृपया कीमत और उपलब्धता बताएं।",
+
+        formSuccess:
+          "आपकी पूछताछ तैयार है। व्हाट्सऐप खुल रहा है।",
+
+        formError:
+          "कृपया नाम और सही मोबाइल नंबर दर्ज करें।",
+
+        phoneMissing:
+          "फोन नंबर अभी कॉन्फ़िगर नहीं किया गया है।",
+
+        whatsappMissing:
+          "व्हाट्सऐप नंबर अभी कॉन्फ़िगर नहीं किया गया है।",
+
+        mapsMissing:
+          "Google Maps लिंक अभी कॉन्फ़िगर नहीं किया गया है।"
+
+      },
+
+      en: {
+
+        navHome: "Home",
+        navMobiles: "Mobiles",
+        navElectronics: "Electronics",
+        navAccessories: "Accessories",
+        navBrands: "Brands",
+        navOffers: "Offers",
+        navAbout: "About",
+        navContact: "Contact",
+
+        callNow: "📞 Call Now",
+        whatsapp: "💬 WhatsApp",
+        whatsappShort: "WhatsApp",
+        call: "Call",
+        directions: "Directions",
+
+        heroBadge: "Local showroom in Dhorimanna",
+
+        heroTitle:
+          "Your Mobile & Electronics Showroom in Dhorimanna",
+
+        heroText:
+          "Explore mobiles, electronics, gadgets and accessories, then contact us for current price and availability.",
+
+        exploreProducts: "Explore Products",
+        askWhatsapp: "💬 Ask on WhatsApp",
+
+        reviewsCount: "1,421+ Customer Reviews",
+
+        googleRating: "Google Rating",
+        customerReviews: "Customer Reviews",
+        wideRange: "Wide Range",
+        wideRangeSub: "Products & categories",
+        localShowroom: "Local Showroom",
+        delivery: "Delivery Available",
+        deliverySub: "Ask for details",
+
+        browse: "Browse",
+        shopCategories: "Shop by Category",
+        categoryDescription:
+          "Explore mobiles, home electronics, gadgets and accessories.",
+
+        smartphones: "📱 Smartphones",
+        smartphoneDesc: "Explore smartphone models",
+
+        smartTv: "📺 Smart TVs",
+        smartTvDesc: "Ask for models and availability",
+
+        homeAppliances: "🏠 Home Appliances",
+        homeAppliancesDesc: "Electronics for your home",
+
+        audio: "🎧 Audio & Earphones",
+        audioDesc: "Earphones, headphones and speakers",
+
+        smartWatch: "⌚ Smart Watches",
+        smartWatchDesc: "Smart watches and wearables",
+
+        chargers: "🔌 Chargers & Cables",
+        chargersDesc: "Mobile charging accessories",
+
+        gadgets: "💻 Electronics & Gadgets",
+        gadgetsDesc: "Useful technology products",
+
+        mobileAccessories: "🛡️ Mobile Accessories",
+        accessoriesDesc: "Cases, screen protectors and more",
+
+        brandsEyebrow: "Brands",
+        popularBrands: "Popular Brands",
+        brandsDescription:
+          "Choose a brand and explore the available showcase products.",
+
+        mobileEyebrow: "Mobile Catalogue",
+        latestMobiles: "Latest Smartphones",
+        mobileDescription:
+          "Explore smartphone models. Ask us for current price and availability.",
+
+        availability: "Ask for Availability",
+        keyDetails: "Key Details",
+
+        accessoriesEyebrow: "Accessories",
+        accessoriesTitle: "Mobile Accessories",
+        accessoriesDescription:
+          "Ask about chargers, cables, earphones, cases, power banks and other accessories.",
+
+        electronicsEyebrow: "Home Electronics",
+        electronicsTitle: "Electronics for Your Home",
+        electronicsDescription:
+          "Explore electronics categories and contact us for models and availability.",
+
+        televisions: "Televisions",
+        refrigerators: "Refrigerators",
+        washingMachines: "Washing Machines",
+        kitchen: "Kitchen Appliances",
+        speakers: "Speakers",
+        fans: "Fans",
+        smallAppliances: "Small Appliances",
+        otherElectronics: "Other Electronics",
+        askModels: "Ask for models and availability",
+
+        offersEyebrow: "Showroom Updates",
+        specialOffers: "Special Offers",
+        offersDescription:
+          "Contact the showroom for current offers and new product information.",
+
+        offerOneLabel: "NEW",
+        offerTwoLabel: "OFFERS",
+        offerThreeLabel: "EXCHANGE",
+
+        newArrivals: "New Arrivals",
+        newArrivalsDesc:
+          "Ask about new mobile and electronics models.",
+
+        festivalOffers: "Festival Offers",
+        festivalOffersDesc:
+          "Contact us for current offers and applicable terms.",
+
+        exchangeOffers: "Exchange Offers",
+        exchangeOffersDesc:
+          "Ask for current exchange options and details.",
+
+        askAvailability: "Ask for Availability →",
+
+        aboutEyebrow: "About Showroom",
+        whyChoose: "Why Visit Us?",
+        whyDescription:
+          "Connect with your local showroom in Dhorimanna for mobiles, electronics and accessories.",
+
+        wideProductRange: "Wide Product Range",
+        wideProductRangeDesc:
+          "Different mobile and electronics categories.",
+
+        pickup: "In-Store Pickup",
+        pickupDesc:
+          "Ask about product availability first.",
+
+        deliveryAvailable: "Delivery Available",
+        deliveryAvailableDesc:
+          "Contact us for delivery details.",
+
+        helpfulService: "Helpful Service",
+        helpfulServiceDesc:
+          "Contact us for product information.",
+
+        convenientLocation: "Convenient Location",
+        convenientLocationDesc:
+          "Jambheshwar Market, Main Chauraha.",
+
+        customerReviewsTitle: "Customer Reviews",
+        reviewsNote:
+          "View genuine customer reviews on Google. We do not publish unverified customer testimonials on this website.",
+        readReviews: "View Reviews on Google",
+
+        followInstagram: "Follow Us on Instagram",
+        instagramStatic:
+          "The images shown here are a static showcase.",
+        followOnInstagram: "Follow on Instagram",
+
+        visitEyebrow: "Visit Us",
+        visitShowroom: "Visit Our Showroom",
+        getDirections: "📍 Get Directions",
+        contactUs: "Contact Us",
+        openMaps: "Open Google Maps",
+
+        contactEyebrow: "Contact",
+        contactTitle: "Need Information?",
+        contactDescription:
+          "Contact us for current product prices and availability.",
+
+        storeNameLabel: "Showroom",
+        addressLabel: "Address",
+        phoneLabel: "Phone",
+        phoneNotConfigured: "Phone number not configured",
+
+        enquiryEyebrow: "Enquiry",
+        sendEnquiry: "Send Enquiry",
+        name: "Name",
+        mobileNumber: "Mobile Number",
+        product: "Product",
+        message: "Message",
+        sendOnWhatsapp: "💬 Send on WhatsApp",
+
+        footerDescription:
+          "A digital showroom for mobiles, electronics, gadgets and accessories in Dhorimanna.",
+
+        company: "Company",
+        products: "Products",
+        customer: "Customer",
+        enquiry: "Enquiry",
+
+        copyright:
+          "© Malani Mobile & Electronic Showroom Dhorimanna. All Rights Reserved.",
+
+        searchCount: "products",
+        noProducts: "No products found",
+        noProductsDescription:
+          "Try changing your search or brand filter.",
+
+        whatsappMessage:
+          "Hello Malani Mobile & Electronic Showroom, I am interested in [PRODUCT]. Please share the current price and availability.",
+
+        generalWhatsappMessage:
+          "Hello Malani Mobile & Electronic Showroom, I would like information about your products. Please share current price and availability.",
+
+        formSuccess:
+          "Your enquiry is ready. WhatsApp is opening.",
+
+        formError:
+          "Please enter your name and a valid mobile number.",
+
+        phoneMissing:
+          "Phone number has not been configured yet.",
+
+        whatsappMissing:
+          "WhatsApp number has not been configured yet.",
+
+        mapsMissing:
+          "Google Maps link has not been configured yet."
+
+      }
+
+    };
+
+
+    /* =====================================================
+       CURRENT LANGUAGE
+       No localStorage.
+       Default is Hindi.
+    ===================================================== */
+
+    let currentLanguage = "hi";
+
+
+    function t(key) {
+      return translations[currentLanguage][key] || key;
+    }
+
+
+    /* =====================================================
+       LANGUAGE SWITCH
+    ===================================================== */
+
+    function setLanguage(language) {
+
+      if (!translations[language]) return;
+
+      currentLanguage = language;
+
+      document.documentElement.lang = language === "hi" ? "hi" : "en";
+
+      document.querySelectorAll("[data-i18n]").forEach(element => {
+        const key = element.getAttribute("data-i18n");
+
+        if (translations[language][key]) {
+          element.textContent = translations[language][key];
+        }
+      });
+
+      document.querySelectorAll("[data-lang]").forEach(button => {
+        button.classList.toggle(
+          "active",
+          button.getAttribute("data-lang") === language
+        );
+      });
+
+      updatePlaceholders();
+
+      renderBrands();
+      renderProducts();
+      renderAccessories();
+      updateActionLinks();
+    }
+
+
+    function updatePlaceholders() {
+
+      document.querySelectorAll("[data-placeholder-hi]").forEach(input => {
+
+        const value =
+          currentLanguage === "hi"
+            ? input.getAttribute("data-placeholder-hi")
+            : input.getAttribute("data-placeholder-en");
+
+        input.placeholder = value;
+
+      });
+
+    }
+
+
+    document.querySelectorAll("[data-lang]").forEach(button => {
+
+      button.addEventListener("click", () => {
+
+        setLanguage(button.getAttribute("data-lang"));
+
+      });
+
+    });
+
+
+    /* =====================================================
+       BRAND FILTER
+    ===================================================== */
+
+    const mobileBrands = [
+      "All",
+      "Apple",
+      "Samsung",
+      "OnePlus",
+      "vivo",
+      "OPPO",
+      "realme",
+      "iQOO",
+      "Redmi",
+      "Motorola",
+      "POCO"
+    ];
+
+    let selectedBrand = "All";
+
+
+    function renderBrands() {
+
+      const container = document.getElementById("brandFilters");
+
+      container.innerHTML = "";
+
+      mobileBrands.forEach(brand => {
+
+        const button = document.createElement("button");
+
+        button.className =
+          "brand-btn " +
+          (selectedBrand === brand ? "active" : "");
+
+        button.textContent =
+          brand === "All"
+            ? currentLanguage === "hi"
+              ? "सभी"
+              : "All"
+            : brand;
+
+        button.addEventListener("click", () => {
+
+          selectedBrand = brand;
+
+          renderBrands();
+          renderProducts();
+
+          document.getElementById("mobiles").scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+
+        });
+
+        container.appendChild(button);
+
+      });
+
+    }
+
+
+    /* =====================================================
+       PRODUCT RENDER
+    ===================================================== */
+
+    function createProductCard(product) {
+
+      const card = document.createElement("article");
+
+      card.className = "product-card reveal";
+
+      card.innerHTML = `
+        <div class="product-image">
+          <img
+            src="${product.image}"
+            alt="${escapeHTML(product.name)}"
+            loading="lazy"
+          />
+
+          <span class="product-label">
+            ${currentLanguage === "hi" ? "शोकेस" : "SHOWCASE"}
+          </span>
+        </div>
+
+        <div class="product-body">
+
+          <div class="product-brand">
+            ${escapeHTML(product.brand)}
+          </div>
+
+          <h3 class="product-name">
+            ${escapeHTML(product.name)}
+          </h3>
+
+          <p class="product-spec">
+            ${escapeHTML(product.specification)}
+          </p>
+
+          <span class="availability">
+            ${t("availability")}
+          </span>
+
+          <div class="product-actions">
+
+            <button
+              class="btn btn-dark details-btn"
+              type="button"
+            >
+              ${currentLanguage === "hi" ? "जानकारी देखें" : "View Details"}
+            </button>
+
+            <a
+              href="#"
+              class="btn btn-whatsapp product-whatsapp"
+            >
+              ${currentLanguage === "hi" ? "व्हाट्सऐप" : "WhatsApp"}
+            </a>
+
+          </div>
+
+        </div>
+      `;
+
+      card.querySelector(".details-btn")
+        .addEventListener("click", () => openProductModal(product));
+
+      card.querySelector(".product-whatsapp")
+        .addEventListener("click", event => {
+
+          event.preventDefault();
+
+          openProductWhatsApp(product);
+
+        });
+
+      return card;
+    }
+
+
+    function renderProducts() {
+
+      const grid = document.getElementById("productGrid");
+      const search = document
+        .getElementById("productSearch")
+        .value
+        .trim()
+        .toLowerCase();
+
+      let filtered = products.filter(product => {
+
+        const matchesCategory =
+          product.category === "mobile";
+
+        const matchesBrand =
+          selectedBrand === "All" ||
+          product.brand.toLowerCase() === selectedBrand.toLowerCase();
+
+        const searchable =
+          `${product.name} ${product.brand} ${product.specification}`
+          .toLowerCase();
+
+        const matchesSearch =
+          !search || searchable.includes(search);
+
+        return matchesCategory &&
+          matchesBrand &&
+          matchesSearch;
+
+      });
+
+      grid.innerHTML = "";
+
+      const count = document.getElementById("catalogCount");
+
+      count.textContent =
+        `${filtered.length} ${t("searchCount")}`;
+
+      if (!filtered.length) {
+
+        grid.innerHTML = `
+          <div class="empty-state">
+            <strong>${t("noProducts")}</strong>
+            ${t("noProductsDescription")}
+          </div>
+        `;
+
+        return;
+      }
+
+      filtered.forEach(product => {
+
+        grid.appendChild(createProductCard(product));
+
+      });
+
+      requestAnimationFrame(observeReveals);
+
+    }
+
+
+    function renderAccessories() {
+
+      const grid = document.getElementById("accessoryGrid");
+
+      grid.innerHTML = "";
+
+      const accessories =
+        products.filter(product => product.category === "accessory");
+
+      accessories.forEach(product => {
+
+        grid.appendChild(createProductCard(product));
+
+      });
+
+      requestAnimationFrame(observeReveals);
+
+    }
+
+
+    /* =====================================================
+       SEARCH
+    ===================================================== */
+
+    document
+      .getElementById("productSearch")
+      .addEventListener("input", () => {
+
+        renderProducts();
+
+      });
+
+
+    /* =====================================================
+       PRODUCT MODAL
+    ===================================================== */
+
+    const modal = document.getElementById("productModal");
+
+    function openProductModal(product) {
+
+      document.getElementById("modalImage").src = product.image;
+
+      document.getElementById("modalImage").alt = product.name;
+
+      document.getElementById("modalBrand").textContent = product.brand;
+
+      document.getElementById("modalName").textContent = product.name;
+
+      document.getElementById("modalSpec").textContent =
+        product.specification;
+
+      const specs = document.getElementById("modalSpecs");
+
+      specs.innerHTML = "";
+
+      product.specs.forEach(spec => {
+
+        const li = document.createElement("li");
+
+        li.textContent = spec;
+
+        specs.appendChild(li);
+
+      });
+
+      const whatsappButton =
+        document.getElementById("modalWhatsapp");
+
+      whatsappButton.onclick = event => {
+
+        event.preventDefault();
+
+        openProductWhatsApp(product);
+
+      };
+
+      modal.classList.add("show");
+
+      document.body.style.overflow = "hidden";
+
+    }
+
+
+    function closeProductModal() {
+
+      modal.classList.remove("show");
+
+      document.body.style.overflow = "";
+
+    }
+
+
+    document
+      .getElementById("modalClose")
+      .addEventListener("click", closeProductModal);
+
+
+    modal.addEventListener("click", event => {
+
+      if (event.target === modal) {
+        closeProductModal();
+      }
+
+    });
+
+
+    document.addEventListener("keydown", event => {
+
+      if (event.key === "Escape") {
+        closeProductModal();
+      }
+
+    });
+
+
+    /* =====================================================
+       WHATSAPP
+    ===================================================== */
+
+    function cleanPhone(number) {
+
+      return String(number || "")
+        .replace(/\D/g, "");
+
+    }
+
+
+    function openWhatsApp(message) {
+
+      const number = cleanPhone(STORE.whatsapp);
+
+      if (!number) {
+
+        alert(t("whatsappMissing"));
+
+        return;
+
+      }
+
+      const url =
+        `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
+
+      window.open(url, "_blank", "noopener");
+
+    }
+
+
+    function openProductWhatsApp(product) {
+
+      const message =
+        t("whatsappMessage")
+          .replace("[PRODUCT]", product.name);
+
+      openWhatsApp(message);
+
+    }
+
+
+    function updateActionLinks() {
+
+      const phone = cleanPhone(STORE.phone);
+
+      const whatsapp = cleanPhone(STORE.whatsapp);
+
+      document.querySelectorAll(".call-link").forEach(link => {
+
+        if (phone) {
+
+          link.href = `tel:${phone}`;
+
+          link.classList.remove("btn-disabled");
+
+          if (link.hasAttribute("data-phone-display")) {
+            link.textContent = STORE.phone;
+          }
+
+        } else {
+
+          link.href = "#";
+
+          link.classList.add("btn-disabled");
+
+          if (link.hasAttribute("data-phone-display")) {
+
+            link.innerHTML =
+              `<span>${t("phoneNotConfigured")}</span>`;
+
+          }
+
+        }
+
+      });
+
+
+      document.querySelectorAll(".whatsapp-link").forEach(link => {
+
+        if (whatsapp) {
+
+          link.href =
+            `https://wa.me/${whatsapp}?text=${encodeURIComponent(
+              t("generalWhatsappMessage")
+            )}`;
+
+          link.target = "_blank";
+          link.rel = "noopener";
+
+          link.classList.remove("btn-disabled");
+
+        } else {
+
+          link.href = "#";
+
+          link.classList.add("btn-disabled");
+
+          link.removeAttribute("target");
+
+        }
+
+      });
+
+
+      document.querySelectorAll(".maps-link").forEach(link => {
+
+        if (STORE.mapsUrl) {
+
+          link.href = STORE.mapsUrl;
+
+          link.target = "_blank";
+          link.rel = "noopener";
+
+          link.classList.remove("btn-disabled");
+
+        } else {
+
+          link.href = "#";
+
+          link.classList.add("btn-disabled");
+
+        }
+
+      });
+
+
+      document.querySelectorAll(".maps-review-link").forEach(link => {
+
+        if (STORE.googleBusinessUrl) {
+
+          link.href = STORE.googleBusinessUrl;
+
+          link.target = "_blank";
+          link.rel = "noopener";
+
+          link.classList.remove("btn-disabled");
+
+        } else {
+
+          link.href = "#";
+
+          link.classList.add("btn-disabled");
+
+        }
+
+      });
+
+    }
+
+
+    /* =====================================================
+       CONTACT FORM
+    ===================================================== */
+
+    document
+      .getElementById("enquiryForm")
+      .addEventListener("submit", event => {
+
+        event.preventDefault();
+
+        const name =
+          document.getElementById("name").value.trim();
+
+        const phone =
+          document.getElementById("phone").value.trim();
+
+        const product =
+          document.getElementById("product").value.trim();
+
+        const message =
+          document.getElementById("message").value.trim();
+
+        const phoneValid =
+          /^[0-9+\-\s]{8,15}$/.test(phone);
+
+        const formMessage =
+          document.getElementById("formMessage");
+
+        if (!name || !phoneValid) {
+
+          formMessage.className =
+            "form-message error";
+
+          formMessage.textContent =
+            t("formError");
+
+          return;
+
+        }
+
+        const whatsappNumber =
+          cleanPhone(STORE.whatsapp);
+
+        if (!whatsappNumber) {
+
+          formMessage.className =
+            "form-message error";
+
+          formMessage.textContent =
+            t("whatsappMissing");
+
+          return;
+
+        }
+
+        let text =
+          currentLanguage === "hi"
+            ? `नमस्ते मालाणी मोबाइल इलेक्ट्रॉनिक्स शोरूम,
+
+नाम: ${name}
+मोबाइल: ${phone}
+
+प्रोडक्ट: ${product || "जानकारी चाहिए"}
+
+संदेश:
+${message || "कृपया कीमत और उपलब्धता बताएं।"}`
+            : `Hello Malani Mobile & Electronic Showroom,
+
+Name: ${name}
+Mobile: ${phone}
+
+Product: ${product || "Product information"}
+
+Message:
+${message || "Please share current price and availability."}`;
+
+        formMessage.className =
+          "form-message success";
+
+        formMessage.textContent =
+          t("formSuccess");
+
+        setTimeout(() => {
+
+          window.open(
+            `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`,
+            "_blank",
+            "noopener"
+          );
+
+        }, 400);
+
+      });
+
+
+    /* =====================================================
+       MOBILE MENU
+    ===================================================== */
+
+    const nav = document.getElementById("nav");
+    const hamburger = document.getElementById("hamburger");
+
+    hamburger.addEventListener("click", () => {
+
+      nav.classList.toggle("mobile-open");
+
+      document.body.classList.toggle(
+        "menu-open",
+        nav.classList.contains("mobile-open")
+      );
+
+    });
+
+
+    document.querySelectorAll(".nav-link").forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        nav.classList.remove("mobile-open");
+
+        document.body.classList.remove("menu-open");
+
+      });
+
+    });
+
+
+    /* =====================================================
+       HEADER SCROLL
+    ===================================================== */
+
+    window.addEventListener("scroll", () => {
+
+      const header =
+        document.getElementById("header");
+
+      header.classList.toggle(
+        "scrolled",
+        window.scrollY > 20
+      );
+
+    });
+
+
+    /* =====================================================
+       SCROLL REVEAL
+    ===================================================== */
+
+    let revealObserver;
+
+    function observeReveals() {
+
+      if (revealObserver) {
+        revealObserver.disconnect();
+      }
+
+      revealObserver =
+        new IntersectionObserver(
+          entries => {
+
+            entries.forEach(entry => {
+
+              if (entry.isIntersecting) {
+
+                entry.target.classList.add("visible");
+
+                revealObserver.unobserve(entry.target);
+
+              }
+
+            });
+
+          },
+          {
+            threshold: 0.08
+          }
+        );
+
+      document
+        .querySelectorAll(".reveal")
+        .forEach(element => {
+
+          if (!element.classList.contains("visible")) {
+            revealObserver.observe(element);
+          }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       SECURITY / HTML ESCAPING
+    ===================================================== */
+
+    function escapeHTML(value) {
+
+      return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+
+    }
+
+
+    /* =====================================================
+       DEMO PROTECTIONS
+       Disable right-click / context menu
+    ===================================================== */
+
+    document.addEventListener("contextmenu", function (event) {
+      event.preventDefault();
+    });
+
+    /* Optional: discourage common inspect shortcuts in demo */
+    document.addEventListener("keydown", function (event) {
+      // Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U, F12
+      if (
+        event.key === "F12" ||
+        (event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "J" || event.key === "C")) ||
+        (event.ctrlKey && event.key === "u")
+      ) {
+        event.preventDefault();
+      }
+    });
+
+
+    /* =====================================================
+       INITIALIZATION
+    ===================================================== */
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+      /*
+        Hindi is intentionally the default.
+        No localStorage or cookies are used.
+      */
+
+      setLanguage("hi");
+
+      observeReveals();
+
+      updateActionLinks();
+
+    });
+
+  </script>
+
+</body>
+</html>
